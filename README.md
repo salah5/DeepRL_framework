@@ -23,13 +23,20 @@ The corpus consists of sentence-aligned subtitles of TED and TEDx talks.
 ### How to run? ###
 * **parameters** 
 
-All parameters are defined in 'params.py'. They all have default values. You may change them either in the file or as arguments of 'run.py' in the 'run.sh' script. 
+All hyper-parameters are defined in 'params.py'. They all have default values. You may change them either in the file or as arguments of 'run.py' in the 'run.sh' script. 
 
 * **run** 
+(1) check the variables in `run.sh`
+
+	* machine: should be 'local' if you run the code on a machine without GPUs, and 'gpu' if you run it on the server
+	* experiment: is the name of the active experiment. This name is used to save the log file in the logs directory.
+
+(2) run the script in a command line
+
 ```
-bash run.sh
+./run.sh
 ```
 
-
+(3) check the results by looking at the corresponding log file in the logs directory
 
 ### Publication ###
