@@ -67,8 +67,10 @@ data_arg.add_argument('--data_dir', type=str, default='./data/')
 
 data_arg.add_argument('--session_dir', type=str, default='./models/')
 
-# data_arg.add_argument('--log_dir', type=str, default='../logs')
-# data_arg.add_argument('--load_sess', type=str, default="dailydialog")
+data_arg.add_argument('--log_dir', type=str, default='./logs/')
+
+# data_arg.add_argument('--load_sess', type=str, default="")
+
 # data_arg.add_argument('--embed_path',type=str, default='../glove.6B/glove.6B.300d.txt')
 
 # #language setting

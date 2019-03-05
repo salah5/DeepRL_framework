@@ -9,9 +9,10 @@ from utils import time
 
 import logging
 
-logging.basicConfig(format = '%(asctime)s - %(levelname)s - %(name)s -   %(message)s',
-                    datefmt = '%m/%d/%Y %H:%M:%S',
-                    level = logging.INFO)
+# logging.basicConfig(filename='example.log',
+# 					format = '%(asctime)s - %(levelname)s - %(name)s -   %(message)s',
+#                     datefmt = '%m/%d/%Y %H:%M:%S',
+#                     level = logging.INFO)
 
 logger = logging.getLogger(__name__)
 
@@ -22,6 +23,11 @@ from main.main import Main
 import params
 
 def run(config):
+
+	logging.basicConfig(filename= config.log_dir+time(),
+						format = '%(asctime)s - %(levelname)s - %(name)s -   %(message)s',
+	                    datefmt = '%m/%d/%Y %H:%M:%S',
+	                    level = logging.INFO)
 
 	logger.info('start.')
 	
