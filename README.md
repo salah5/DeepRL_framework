@@ -9,9 +9,12 @@ Your interest to this project is highly appreciated. Please give a Github star (
 ### Setup ###
 * Python 3.7.2
 * PyTorch 1.0.1.post2
-* More info: [spec-file_*.txt](https://github.com/MMesgar/DeepRL_framework/tree/master/documentation)
+* More info: [spec-file_*](https://github.com/MMesgar/DeepRL_framework/tree/master/documentation)
 
 ### Data ###
+For any task, we use a specific dataset. For now we have following tasks and datasets.
+* *Machine Translation*
+
 
 
 ### How to run? ###
