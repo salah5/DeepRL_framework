@@ -21,6 +21,9 @@ The corpus consists of sentence-aligned subtitles of TED and TEDx talks.
 
 
 ### How to run? ###
+All parameters are defined in 'params.py'. They all have default values. You may change them either in the file or as arguments of 'run.py' in the 'run.sh' script. 
+ 
+
 
 
 ### Publication ###
