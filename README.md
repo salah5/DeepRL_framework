@@ -13,7 +13,7 @@ Your interest to this project is highly appreciated. Please give a Github star (
 
 ### Data ###
 For any task, we use a specific dataset. For now we have following tasks and datasets.
-* *Machine Translation*
+* #Machine Translation#
 
 
 
