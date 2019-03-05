@@ -29,8 +29,8 @@ All hyper-parameters are defined in 'params.py'. They all have default values. Y
 
 (1) check/modify the variables in `run.sh`
 
-	* machine: should be 'local' if you run the code on a machine without GPUs, and 'gpu' if you run it on a GPU server
-	* experiment: is the name of the running experiment. This name is used to save the log file in the logs directory.
+	** machine: should be 'local' if you run the code on a machine without GPUs, and 'gpu' if you run it on a GPU server
+	** experiment: is the name of the running experiment. This name is used to save the log file in the logs directory.
 
 (2) run the script in a command line
 
