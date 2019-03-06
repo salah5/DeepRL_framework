@@ -242,7 +242,8 @@ class Main(object):
 
             _ , action_ids, label_ids = self.world.iterate(inp_data = batch, update=False)
 
-            for i in range(0,self.config.batch_size):
+
+            for i in range(0, len(batch)):
                 
                 i_x = batch[i][3]
                 
