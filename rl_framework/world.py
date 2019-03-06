@@ -136,7 +136,7 @@ class World(nn.Module):
 
 		# # return the loss of this update.
 
-		loss = loss.cpu()
+		loss = loss.cpu().data
 
 		actions = actions.cpu().numpy()
 
