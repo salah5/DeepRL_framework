@@ -49,11 +49,11 @@ class World(nn.Module):
 
 		self.use_gpu = config.use_gpu
 
-		if self.use_gpu:
+		if self.use_gpu and torch.cuda.is_available():
 
 			self.agent = self.agent.cuda()
 
-			self.environment = self.environment.cuda()
+			self.env = self.env.cuda()
 
 
 		self.pad_index = self.config.lang_y.word2index[self.config.lang_y.pad_word]
