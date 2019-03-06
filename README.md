@@ -36,9 +36,15 @@ All hyper-parameters are defined in 'params.py'. They all have default values. Y
 (2) run the script in a command line
 
 ```
-./run.sh
+nohup ./run.sh &
 ```
 
 (3) check the results by looking at the corresponding log file to the experiment in the logs directory
+
+```
+tail -f logs/X
+```
+where X is the name of your experiment
+
 
 ### Publication ###
