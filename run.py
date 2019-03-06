@@ -17,7 +17,7 @@ logger = logging.getLogger(__name__)
 
 from main.lang import Lang
 
-from main.main import Main
+from main.main import Mai
 
 import params
 
