@@ -4,7 +4,11 @@
 ##
 # define variables
 machine='local' # possible values: {'local', 'gpu'}, where 'local' has no GPU and cuda
+
+experiment='mt-seq2seq'
  
+log_file='./logs/'$experiment'.log'
+
 ###
 ##
 # check if we are in RL virtual environment
@@ -33,7 +37,7 @@ fi
 ###
 ##
 # Finally execute the model
-python run.py 
+python run.py &> $log_file 
 
 
 ###

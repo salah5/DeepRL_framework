@@ -9,6 +9,7 @@ Your interest to this project is highly appreciated. Please give a Github star (
 ### Setup ###
 * Python 3.7.2
 * PyTorch 1.0.1.post2
+* CUDA Version 9.0.176
 * More info: [spec-file_*](https://github.com/MMesgar/DeepRL_framework/tree/master/documentation)
 
 ### Data ###
