@@ -28,6 +28,8 @@ conda list --explicit > ./documentation/spec-file-$machine.txt
 # run the latest version of the model by getting it from GitHub
 if [[ $machine == 'gpu' ]]
 then
+	git checkout logs/*
+	git checkout models/*
 	git pull
 fi
 
