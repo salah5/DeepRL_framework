@@ -28,7 +28,7 @@ conda list --explicit > ./documentation/spec-file-$machine.txt
 # run the latest version of the model by getting it from GitHub
 if [[ $machine == 'gpu' ]]
 then
-	
+	echo hello
 	git pull
 fi
 
