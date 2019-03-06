@@ -135,6 +135,9 @@ class World(nn.Module):
 			self.optimizer.step()
 
 		# # return the loss of this update.
+
+		loss = loss.cpu()
+
 		actions = actions.cpu().numpy()
 
 		labels = labels.cpu().numpy()

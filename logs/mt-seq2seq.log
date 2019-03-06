@@ -1,19 +1,19 @@
-03/06/2019 11:08:45 - INFO - __main__ -   start.
-03/06/2019 11:08:45 - INFO - __main__ -   params: Namespace(attn_type='cat', avg_type='word', batch_size=3, beam_size=1, bi_enc_cell=False, ckpt_step=2, data_dir='./data/', dec_cell_size=6, delayed_reward=True, dropout=0.3, early_stop=True, embed_size=5, enc_cell_size=6, env_name='MT', fix_batch=True, gen_mode='teacher_forcing', gen_type='greedy', improve_threshold=0.996, init_lr=0.001, init_reward='zero', init_state='zero', lang_name=['de', 'en'], lang_x_pkl='./data/lang.de.pkl', lang_y_pkl='./data/lang.en.pkl', max_dec_len=25, max_epoch=200, max_seq_len=25, metric='bleu', num_layer=1, patience=10, patient_increase=3.0, pilot=True, prep_data=False, preview_pred=True, preview_threshold=0.5, print_step=2, rnn_cell='gru', save_model=True, seed=1234, session_dir='./models/', test_path='./data/prep/test.de-en.', test_x_path='./data/test.de', test_y_path='./data/test.en', train_path='./data/prep/train.de-en.', train_x_path='./data/train.de', train_y_path='./data/train.en', use_attn=False, use_gpu=False, use_ptr=False, utt_type='rnn', valid_path='./data/prep/valid.de-en.', valid_x_path='./data/valid.de', valid_y_path='./data/valid.en', voc_size=[4000, 4000])
-03/06/2019 11:08:45 - INFO - main.main -   datasets are prepared
-03/06/2019 11:08:45 - INFO - main.main -   lang info loaded
-03/06/2019 11:08:46 - INFO - data_processing.dataset_loader -   datasets are loaded: ./data/train.de, ./data/train.en 
-03/06/2019 11:08:46 - INFO - data_processing.dataset_loader -   dataset size: 153348 
-03/06/2019 11:08:52 - INFO - data_processing.dataset_loader -   converted words to index and padding
-03/06/2019 11:08:53 - INFO - data_processing.dataset_loader -   datasets are loaded: ./data/valid.de, ./data/valid.en 
-03/06/2019 11:08:53 - INFO - data_processing.dataset_loader -   dataset size: 6970 
-03/06/2019 11:08:53 - INFO - data_processing.dataset_loader -   converted words to index and padding
-03/06/2019 11:08:53 - INFO - data_processing.dataset_loader -   datasets are loaded: ./data/test.de, ./data/test.en 
-03/06/2019 11:08:53 - INFO - data_processing.dataset_loader -   dataset size: 6750 
-03/06/2019 11:08:53 - INFO - data_processing.dataset_loader -   converted words to index and padding
-03/06/2019 11:08:54 - INFO - main.main -   number of train batches: 51116 for batch_size: 3
-03/06/2019 11:08:54 - INFO - main.main -   shrinking dataset: number of train batches: 2 for batch_size: 3
-03/06/2019 11:08:54 - INFO - main.main -   World (
+03/06/2019 11:15:23 - INFO - __main__ -   start.
+03/06/2019 11:15:23 - INFO - __main__ -   params: Namespace(attn_type='cat', avg_type='word', batch_size=3, beam_size=1, bi_enc_cell=False, ckpt_step=2, data_dir='./data/', dec_cell_size=6, delayed_reward=True, dropout=0.3, early_stop=True, embed_size=5, enc_cell_size=6, env_name='MT', fix_batch=True, gen_mode='teacher_forcing', gen_type='greedy', improve_threshold=0.996, init_lr=0.001, init_reward='zero', init_state='zero', lang_name=['de', 'en'], lang_x_pkl='./data/lang.de.pkl', lang_y_pkl='./data/lang.en.pkl', max_dec_len=25, max_epoch=200, max_seq_len=25, metric='bleu', num_layer=1, patience=10, patient_increase=3.0, pilot=True, prep_data=False, preview_pred=True, preview_threshold=0.5, print_step=2, rnn_cell='gru', save_model=True, seed=1234, session_dir='./models/', test_path='./data/prep/test.de-en.', test_x_path='./data/test.de', test_y_path='./data/test.en', train_path='./data/prep/train.de-en.', train_x_path='./data/train.de', train_y_path='./data/train.en', use_attn=False, use_gpu=False, use_ptr=False, utt_type='rnn', valid_path='./data/prep/valid.de-en.', valid_x_path='./data/valid.de', valid_y_path='./data/valid.en', voc_size=[4000, 4000])
+03/06/2019 11:15:23 - INFO - main.main -   datasets are prepared
+03/06/2019 11:15:23 - INFO - main.main -   lang info loaded
+03/06/2019 11:15:24 - INFO - data_processing.dataset_loader -   datasets are loaded: ./data/train.de, ./data/train.en 
+03/06/2019 11:15:24 - INFO - data_processing.dataset_loader -   dataset size: 153348 
+03/06/2019 11:15:31 - INFO - data_processing.dataset_loader -   converted words to index and padding
+03/06/2019 11:15:31 - INFO - data_processing.dataset_loader -   datasets are loaded: ./data/valid.de, ./data/valid.en 
+03/06/2019 11:15:31 - INFO - data_processing.dataset_loader -   dataset size: 6970 
+03/06/2019 11:15:32 - INFO - data_processing.dataset_loader -   converted words to index and padding
+03/06/2019 11:15:32 - INFO - data_processing.dataset_loader -   datasets are loaded: ./data/test.de, ./data/test.en 
+03/06/2019 11:15:32 - INFO - data_processing.dataset_loader -   dataset size: 6750 
+03/06/2019 11:15:32 - INFO - data_processing.dataset_loader -   converted words to index and padding
+03/06/2019 11:15:32 - INFO - main.main -   number of train batches: 51116 for batch_size: 3
+03/06/2019 11:15:32 - INFO - main.main -   shrinking dataset: number of train batches: 2 for batch_size: 3
+03/06/2019 11:15:32 - INFO - main.main -   World (
   (env): Environment(
     (seq2seq): EncDec(
       (x_embeddings): Embeddings(
@@ -46,226 +46,226 @@
   (cross_ent_loss): CrossEntropyoss(), parameters=0
   (entropy_loss): Entropy(), parameters=0
 ) Total Parameters=96468
-03/06/2019 11:08:54 - INFO - main.main -   **** Training Begins ****
-03/06/2019 11:08:54 - INFO - main.main -   epoch: 0/200, update_cnt: 1/400: loss: 8.36
-03/06/2019 11:08:54 - INFO - main.main -    Evaluating Model (current update_cnt:0)
-03/06/2019 11:08:54 - INFO - main.main -    	 on Training Set 
-03/06/2019 11:08:54 - INFO - main.main -   		 loss: 8.39
-03/06/2019 11:08:54 - INFO - main.main -   	 on Validation Set 
-03/06/2019 11:08:54 - INFO - main.main -   		 loss: 8.38
-03/06/2019 11:08:54 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
-03/06/2019 11:08:54 - INFO - main.main -   	 on Test Set 
-03/06/2019 11:08:54 - INFO - main.main -   		 loss: 8.37
-03/06/2019 11:08:54 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
-03/06/2019 11:08:54 - INFO - main.main -   Evaluation Done, update early stoping 
-03/06/2019 11:08:54 - INFO - main.main -   Update patience to 10
-03/06/2019 11:08:54 - INFO - main.main -   Model Saved.
-03/06/2019 11:08:54 - INFO - main.main -   epoch: 1/200, update_cnt: 3/400: loss: 8.38
-03/06/2019 11:08:54 - INFO - main.main -    Evaluating Model (current update_cnt:2)
-03/06/2019 11:08:54 - INFO - main.main -    	 on Training Set 
-03/06/2019 11:08:54 - INFO - main.main -   		 loss: 8.38
-03/06/2019 11:08:54 - INFO - main.main -   	 on Validation Set 
-03/06/2019 11:08:54 - INFO - main.main -   		 loss: 8.37
-03/06/2019 11:08:54 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
-03/06/2019 11:08:54 - INFO - main.main -   	 on Test Set 
-03/06/2019 11:08:54 - INFO - main.main -   		 loss: 8.36
-03/06/2019 11:08:54 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
-03/06/2019 11:08:54 - INFO - main.main -   Evaluation Done, update early stoping 
-03/06/2019 11:08:54 - INFO - main.main -   Model Saved.
-03/06/2019 11:08:54 - INFO - main.main -   epoch: 2/200, update_cnt: 5/400: loss: 8.37
-03/06/2019 11:08:54 - INFO - main.main -    Evaluating Model (current update_cnt:4)
-03/06/2019 11:08:54 - INFO - main.main -    	 on Training Set 
-03/06/2019 11:08:54 - INFO - main.main -   		 loss: 8.37
-03/06/2019 11:08:54 - INFO - main.main -   	 on Validation Set 
-03/06/2019 11:08:55 - INFO - main.main -   		 loss: 8.37
-03/06/2019 11:08:55 - INFO - main.main -   
+03/06/2019 11:15:32 - INFO - main.main -   **** Training Begins ****
+03/06/2019 11:15:32 - INFO - main.main -   epoch: 0/200, update_cnt: 1/400: loss: 8.36
+03/06/2019 11:15:32 - INFO - main.main -    Evaluating Model (current update_cnt:0)
+03/06/2019 11:15:32 - INFO - main.main -    	 on Training Set 
+03/06/2019 11:15:33 - INFO - main.main -   		 loss: 8.39
+03/06/2019 11:15:33 - INFO - main.main -   	 on Validation Set 
+03/06/2019 11:15:33 - INFO - main.main -   		 loss: 8.38
+03/06/2019 11:15:33 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/06/2019 11:15:33 - INFO - main.main -   	 on Test Set 
+03/06/2019 11:15:33 - INFO - main.main -   		 loss: 8.37
+03/06/2019 11:15:33 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/06/2019 11:15:33 - INFO - main.main -   Evaluation Done, update early stoping 
+03/06/2019 11:15:33 - INFO - main.main -   Update patience to 10
+03/06/2019 11:15:33 - INFO - main.main -   Model Saved.
+03/06/2019 11:15:33 - INFO - main.main -   epoch: 1/200, update_cnt: 3/400: loss: 8.38
+03/06/2019 11:15:33 - INFO - main.main -    Evaluating Model (current update_cnt:2)
+03/06/2019 11:15:33 - INFO - main.main -    	 on Training Set 
+03/06/2019 11:15:33 - INFO - main.main -   		 loss: 8.38
+03/06/2019 11:15:33 - INFO - main.main -   	 on Validation Set 
+03/06/2019 11:15:33 - INFO - main.main -   		 loss: 8.37
+03/06/2019 11:15:33 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/06/2019 11:15:33 - INFO - main.main -   	 on Test Set 
+03/06/2019 11:15:33 - INFO - main.main -   		 loss: 8.36
+03/06/2019 11:15:33 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/06/2019 11:15:33 - INFO - main.main -   Evaluation Done, update early stoping 
+03/06/2019 11:15:33 - INFO - main.main -   Model Saved.
+03/06/2019 11:15:33 - INFO - main.main -   epoch: 2/200, update_cnt: 5/400: loss: 8.37
+03/06/2019 11:15:33 - INFO - main.main -    Evaluating Model (current update_cnt:4)
+03/06/2019 11:15:33 - INFO - main.main -    	 on Training Set 
+03/06/2019 11:15:33 - INFO - main.main -   		 loss: 8.37
+03/06/2019 11:15:33 - INFO - main.main -   	 on Validation Set 
+03/06/2019 11:15:33 - INFO - main.main -   		 loss: 8.37
+03/06/2019 11:15:33 - INFO - main.main -   
 x: ['wo', 'wasser', 'sich', 'verflüssigt', ',', 'wird', 'es', 'zur', 'wiege', 'neuen', 'lebens', '.', 'für', 'zellen', ',', 'die', 'grün', 'von', 'chlorophyll', 'sind', '.', 'dieser', 'molekulare', 'wunderstoff', 'ist', 'von', 'entscheidender', 'bedeutung', '.', 'er', 'ist', 'es', ',', 'der', 'alles', 'antreibt', '.'],
 y: ['and', 'where', 'water', 'is', 'liquid', ',', 'it', 'becomes', 'a', 'womb', 'for', 'cells', 'green', 'with', 'chlorophyll', '--', 'and', 'that', 'molecular', 'marvel', 'is', 'what', '&', 'apos', ';', 's', 'made', 'a', 'difference', '--', 'it', 'powers', 'everything', '.'],
 label: ['and', 'where', 'water', 'is', 'liquid', ',', 'it', 'becomes', 'a', '<UNK>', 'for', 'cells', 'green', 'with', '<UNK>', '--', 'and', 'that', 'molecular', '<UNK>', 'is', 'what', '&', '<EOS>'],
 pred: ['peter', 'nurses', 'nurses', 'planets', 'began', 'ink', 'spoken', 'rope', 'networks', 'ink', 'nurses', 'ink', 'ink', 'gaps', 'networks', 'peter', 'began', 'nurses', 'ink', 'gaps', 'peter', 'ink', 'ink', 'planets']
-03/06/2019 11:08:55 - INFO - main.main -   
+03/06/2019 11:15:33 - INFO - main.main -   
 x: ['und', 'es', 'ist', 'ein', 'echter', 'vollzeitjob', ',', 'die', 'menschen', ',', 'die', 'angst', 'vor', 'diesen', 'ideen', 'haben', ',', 'daran', 'zu', 'hindern', ',', 'sie', 'zu', 'karikieren', 'und', 'unlautere', 'ziele', 'damit', 'zu', 'verfolgen', '.'],
 y: ['and', 'it', '&', 'apos', ';', 's', 'just', 'about', 'a', 'full-time', 'job', 'trying', 'to', 'prevent', 'people', 'who', 'are', 'scared', 'of', 'these', 'ideas', 'from', 'caricaturing', 'them', 'and', 'then', 'running', 'off', 'to', 'one', 'dire', 'purpose', 'or', 'another', '.'],
 label: ['and', 'it', '&', 'apos', ';', 's', 'just', 'about', 'a', '<UNK>', 'job', 'trying', 'to', 'prevent', 'people', 'who', 'are', 'scared', 'of', 'these', 'ideas', 'from', '<UNK>', '<EOS>'],
 pred: ['born', 'born', 'peter', 'rope', 'peter', 'planets', 'ink', 'spoken', 'peter', 'ink', 'nurses', 'nurses', 'planets', 'planets', 'began', 'planets', 'one', 'nurses', 'ink', 'ink', 'ink', 'ink', 'tragedy', 'nurses']
-03/06/2019 11:08:55 - INFO - main.main -   
+03/06/2019 11:15:33 - INFO - main.main -   
 x: ['wenn', 'ich', 'menschen', 'davon', 'erzähle', ',', 'dass', 'unser', 'körper', 'unser', 'bewusstsein', 'verändert', 'und', 'bewusstsein', 'unser', 'verhalten', 'und', 'dass', 'unser', 'verhalten', 'unsere', 'resultate', 'verändert', ',', 'dann', 'sagen', 'sie', ':', '&', 'quot', ';', 'ich', 'sehe', 'das', 'nicht', ',', 'es', 'fühlt', 'sich', 'künstlich', 'an', '.', '&', 'quot', ';'],
 y: ['so', 'when', 'i', 'tell', 'people', 'about', 'this', ',', 'that', 'our', 'bodies', 'change', 'our', 'minds', 'and', 'our', 'minds', 'can', 'change', 'our', 'behavior', ',', 'and', 'our', 'behavior', 'can', 'change', 'our', 'outcomes', ',', 'they', 'say', 'to', 'me', ',', '&', 'quot', ';', 'i', 'don', '&', 'apos', ';', 't', '--', 'it', 'feels', 'fake', '.', '&', 'quot', ';', 'right', '?'],
 label: ['so', 'when', 'i', 'tell', 'people', 'about', 'this', ',', 'that', 'our', 'bodies', 'change', 'our', 'minds', 'and', 'our', 'minds', 'can', 'change', 'our', 'behavior', ',', 'and', '<EOS>'],
 pred: ['visual', 'nurses', 'ink', 'planets', 'planets', 'planets', 'unbelievable', 'sheep', 'ultimate', 'peter', 'rope', 'ink', 'ink', 'ink', 'ink', 'ink', 'ink', 'ink', 'ink', 'ink', 'ink', 'ink', 'one', 'ink']
-03/06/2019 11:08:55 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
-03/06/2019 11:08:55 - INFO - main.main -   	 on Test Set 
-03/06/2019 11:08:55 - INFO - main.main -   		 loss: 8.36
-03/06/2019 11:08:55 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
-03/06/2019 11:08:55 - INFO - main.main -   Evaluation Done, update early stoping 
-03/06/2019 11:08:55 - INFO - main.main -   Model Saved.
-03/06/2019 11:08:55 - INFO - main.main -   epoch: 3/200, update_cnt: 7/400: loss: 8.33
-03/06/2019 11:08:55 - INFO - main.main -    Evaluating Model (current update_cnt:6)
-03/06/2019 11:08:55 - INFO - main.main -    	 on Training Set 
-03/06/2019 11:08:55 - INFO - main.main -   		 loss: 8.36
-03/06/2019 11:08:55 - INFO - main.main -   	 on Validation Set 
-03/06/2019 11:08:55 - INFO - main.main -   		 loss: 8.36
-03/06/2019 11:08:55 - INFO - main.main -   
+03/06/2019 11:15:33 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/06/2019 11:15:33 - INFO - main.main -   	 on Test Set 
+03/06/2019 11:15:33 - INFO - main.main -   		 loss: 8.36
+03/06/2019 11:15:33 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/06/2019 11:15:33 - INFO - main.main -   Evaluation Done, update early stoping 
+03/06/2019 11:15:33 - INFO - main.main -   Model Saved.
+03/06/2019 11:15:33 - INFO - main.main -   epoch: 3/200, update_cnt: 7/400: loss: 8.33
+03/06/2019 11:15:33 - INFO - main.main -    Evaluating Model (current update_cnt:6)
+03/06/2019 11:15:33 - INFO - main.main -    	 on Training Set 
+03/06/2019 11:15:33 - INFO - main.main -   		 loss: 8.36
+03/06/2019 11:15:33 - INFO - main.main -   	 on Validation Set 
+03/06/2019 11:15:33 - INFO - main.main -   		 loss: 8.36
+03/06/2019 11:15:33 - INFO - main.main -   
 x: ['es', 'war', 'nicht', 'so', ',', 'dass', 'mir', 'der', 'teppich', 'unter', 'den', 'füßen', 'weggezogen', 'worden', 'war', ',', 'es', 'war', 'der', 'ganze', 'boden', ',', 'der', 'mir', 'weggezogen', 'worden', 'war', '.'],
 y: ['it', '&', 'apos', ';', 's', 'not', 'that', 'i', '&', 'apos', ';', 'd', 'had', 'the', 'rug', 'pulled', 'from', 'beneath', 'me', 'as', 'much', 'as', 'the', 'entire', 'floor', 'had', 'been', 'taken', 'away', '.'],
 label: ['it', '&', 'apos', ';', 's', 'not', 'that', 'i', '&', 'apos', ';', 'd', 'had', 'the', '<UNK>', 'pulled', 'from', 'beneath', 'me', 'as', 'much', 'as', 'the', '<EOS>'],
 pred: ['peter', 'peter', 'rope', 'peter', 'planets', 'ink', 'latest', 'spoken', 'spoken', 'someone', 'gaps', 'planets', 'nurses', 'rope', 'peter', 'says', 'peter', 'vast', 'ink', '1970s', 'planets', 'began', 'began', 'ink']
-03/06/2019 11:08:55 - INFO - main.main -   
+03/06/2019 11:15:33 - INFO - main.main -   
 x: ['wo', 'wasser', 'sich', 'verflüssigt', ',', 'wird', 'es', 'zur', 'wiege', 'neuen', 'lebens', '.', 'für', 'zellen', ',', 'die', 'grün', 'von', 'chlorophyll', 'sind', '.', 'dieser', 'molekulare', 'wunderstoff', 'ist', 'von', 'entscheidender', 'bedeutung', '.', 'er', 'ist', 'es', ',', 'der', 'alles', 'antreibt', '.'],
 y: ['and', 'where', 'water', 'is', 'liquid', ',', 'it', 'becomes', 'a', 'womb', 'for', 'cells', 'green', 'with', 'chlorophyll', '--', 'and', 'that', 'molecular', 'marvel', 'is', 'what', '&', 'apos', ';', 's', 'made', 'a', 'difference', '--', 'it', 'powers', 'everything', '.'],
 label: ['and', 'where', 'water', 'is', 'liquid', ',', 'it', 'becomes', 'a', '<UNK>', 'for', 'cells', 'green', 'with', '<UNK>', '--', 'and', 'that', 'molecular', '<UNK>', 'is', 'what', '&', '<EOS>'],
 pred: ['peter', 'nurses', 'nurses', 'planets', 'tragedy', 'ink', 'spoken', 'rope', 'networks', 'ink', 'nurses', 'ink', 'ink', 'gaps', 'networks', 'peter', 'began', 'nurses', 'ink', 'gaps', 'peter', 'ink', 'ink', 'planets']
-03/06/2019 11:08:55 - INFO - main.main -   
+03/06/2019 11:15:33 - INFO - main.main -   
 x: ['und', 'es', 'ist', 'ein', 'echter', 'vollzeitjob', ',', 'die', 'menschen', ',', 'die', 'angst', 'vor', 'diesen', 'ideen', 'haben', ',', 'daran', 'zu', 'hindern', ',', 'sie', 'zu', 'karikieren', 'und', 'unlautere', 'ziele', 'damit', 'zu', 'verfolgen', '.'],
 y: ['and', 'it', '&', 'apos', ';', 's', 'just', 'about', 'a', 'full-time', 'job', 'trying', 'to', 'prevent', 'people', 'who', 'are', 'scared', 'of', 'these', 'ideas', 'from', 'caricaturing', 'them', 'and', 'then', 'running', 'off', 'to', 'one', 'dire', 'purpose', 'or', 'another', '.'],
 label: ['and', 'it', '&', 'apos', ';', 's', 'just', 'about', 'a', '<UNK>', 'job', 'trying', 'to', 'prevent', 'people', 'who', 'are', 'scared', 'of', 'these', 'ideas', 'from', '<UNK>', '<EOS>'],
 pred: ['born', 'born', 'peter', 'rope', 'peter', 'planets', 'ink', 'spoken', 'gaps', 'ink', 'nurses', 'nurses', 'planets', 'planets', 'began', 'planets', 'one', 'nurses', 'ink', 'ink', 'ink', 'ink', 'tragedy', 'nurses']
-03/06/2019 11:08:55 - INFO - main.main -   
+03/06/2019 11:15:33 - INFO - main.main -   
 x: ['für', 'andere', 'menschen', 'geschieht', 'dies', ',', 'wenn', 'sie', 'öffentlich', 'sprechen', 'müssen', ',', 'bei', 'elternratversammlungen', '.', 'oder', 'bei', 'verkaufsgesprächen', 'oder', 'vorträgen', 'wie', 'diesem', '.', 'oder', 'während', 'eines', 'vorstellungsgesprächs', '.'],
 y: ['it', 'could', 'be', ',', 'you', 'know', ',', 'for', 'some', 'people', 'it', '&', 'apos', ';', 's', 'speaking', 'at', 'a', 'school', 'board', 'meeting', '.', 'it', 'might', 'be', 'giving', 'a', 'pitch', 'or', 'giving', 'a', 'talk', 'like', 'this', 'or', 'doing', 'a', 'job', 'interview', '.'],
 label: ['it', 'could', 'be', ',', 'you', 'know', ',', 'for', 'some', 'people', 'it', '&', 'apos', ';', 's', 'speaking', 'at', 'a', 'school', 'board', 'meeting', '.', 'it', '<EOS>'],
 pred: ['peter', 'peter', 'ink', 'networks', 'one', 'one', 'one', 'one', 'edge', 'began', 'planets', 'one', 'one', 'networks', 'planets', 'nurses', 'paradigm', 'began', 'began', 'ink', 'ink', 'ink', 'ink', 'rope']
-03/06/2019 11:08:55 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
-03/06/2019 11:08:55 - INFO - main.main -   	 on Test Set 
-03/06/2019 11:08:55 - INFO - main.main -   		 loss: 8.35
-03/06/2019 11:08:55 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
-03/06/2019 11:08:55 - INFO - main.main -   Evaluation Done, update early stoping 
-03/06/2019 11:08:55 - INFO - main.main -   Model Saved.
-03/06/2019 11:08:55 - INFO - main.main -   epoch: 4/200, update_cnt: 9/400: loss: 8.34
-03/06/2019 11:08:55 - INFO - main.main -    Evaluating Model (current update_cnt:8)
-03/06/2019 11:08:55 - INFO - main.main -    	 on Training Set 
-03/06/2019 11:08:55 - INFO - main.main -   		 loss: 8.35
-03/06/2019 11:08:55 - INFO - main.main -   	 on Validation Set 
-03/06/2019 11:08:55 - INFO - main.main -   		 loss: 8.36
-03/06/2019 11:08:55 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
-03/06/2019 11:08:55 - INFO - main.main -   	 on Test Set 
-03/06/2019 11:08:55 - INFO - main.main -   		 loss: 8.35
-03/06/2019 11:08:55 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
-03/06/2019 11:08:55 - INFO - main.main -   Evaluation Done, update early stoping 
-03/06/2019 11:08:55 - INFO - main.main -   Model Saved.
-03/06/2019 11:08:55 - INFO - main.main -   epoch: 5/200, update_cnt: 11/400: loss: 8.31
-03/06/2019 11:08:55 - INFO - main.main -    Evaluating Model (current update_cnt:10)
-03/06/2019 11:08:55 - INFO - main.main -    	 on Training Set 
-03/06/2019 11:08:56 - INFO - main.main -   		 loss: 8.34
-03/06/2019 11:08:56 - INFO - main.main -   	 on Validation Set 
-03/06/2019 11:08:56 - INFO - main.main -   		 loss: 8.35
-03/06/2019 11:08:56 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
-03/06/2019 11:08:56 - INFO - main.main -   	 on Test Set 
-03/06/2019 11:08:56 - INFO - main.main -   		 loss: 8.34
-03/06/2019 11:08:56 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
-03/06/2019 11:08:56 - INFO - main.main -   Evaluation Done, update early stoping 
-03/06/2019 11:08:56 - INFO - main.main -   Model Saved.
-03/06/2019 11:08:56 - INFO - main.main -   epoch: 6/200, update_cnt: 13/400: loss: 8.30
-03/06/2019 11:08:56 - INFO - main.main -    Evaluating Model (current update_cnt:12)
-03/06/2019 11:08:56 - INFO - main.main -    	 on Training Set 
-03/06/2019 11:08:56 - INFO - main.main -   		 loss: 8.33
-03/06/2019 11:08:56 - INFO - main.main -   	 on Validation Set 
-03/06/2019 11:08:56 - INFO - main.main -   		 loss: 8.35
-03/06/2019 11:08:56 - INFO - main.main -   
+03/06/2019 11:15:33 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/06/2019 11:15:33 - INFO - main.main -   	 on Test Set 
+03/06/2019 11:15:34 - INFO - main.main -   		 loss: 8.35
+03/06/2019 11:15:34 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/06/2019 11:15:34 - INFO - main.main -   Evaluation Done, update early stoping 
+03/06/2019 11:15:34 - INFO - main.main -   Model Saved.
+03/06/2019 11:15:34 - INFO - main.main -   epoch: 4/200, update_cnt: 9/400: loss: 8.34
+03/06/2019 11:15:34 - INFO - main.main -    Evaluating Model (current update_cnt:8)
+03/06/2019 11:15:34 - INFO - main.main -    	 on Training Set 
+03/06/2019 11:15:34 - INFO - main.main -   		 loss: 8.35
+03/06/2019 11:15:34 - INFO - main.main -   	 on Validation Set 
+03/06/2019 11:15:34 - INFO - main.main -   		 loss: 8.36
+03/06/2019 11:15:34 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/06/2019 11:15:34 - INFO - main.main -   	 on Test Set 
+03/06/2019 11:15:34 - INFO - main.main -   		 loss: 8.35
+03/06/2019 11:15:34 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/06/2019 11:15:34 - INFO - main.main -   Evaluation Done, update early stoping 
+03/06/2019 11:15:34 - INFO - main.main -   Model Saved.
+03/06/2019 11:15:34 - INFO - main.main -   epoch: 5/200, update_cnt: 11/400: loss: 8.31
+03/06/2019 11:15:34 - INFO - main.main -    Evaluating Model (current update_cnt:10)
+03/06/2019 11:15:34 - INFO - main.main -    	 on Training Set 
+03/06/2019 11:15:34 - INFO - main.main -   		 loss: 8.34
+03/06/2019 11:15:34 - INFO - main.main -   	 on Validation Set 
+03/06/2019 11:15:34 - INFO - main.main -   		 loss: 8.35
+03/06/2019 11:15:34 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/06/2019 11:15:34 - INFO - main.main -   	 on Test Set 
+03/06/2019 11:15:34 - INFO - main.main -   		 loss: 8.34
+03/06/2019 11:15:34 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/06/2019 11:15:34 - INFO - main.main -   Evaluation Done, update early stoping 
+03/06/2019 11:15:34 - INFO - main.main -   Model Saved.
+03/06/2019 11:15:34 - INFO - main.main -   epoch: 6/200, update_cnt: 13/400: loss: 8.30
+03/06/2019 11:15:34 - INFO - main.main -    Evaluating Model (current update_cnt:12)
+03/06/2019 11:15:34 - INFO - main.main -    	 on Training Set 
+03/06/2019 11:15:34 - INFO - main.main -   		 loss: 8.33
+03/06/2019 11:15:34 - INFO - main.main -   	 on Validation Set 
+03/06/2019 11:15:35 - INFO - main.main -   		 loss: 8.35
+03/06/2019 11:15:35 - INFO - main.main -   
 x: ['es', 'war', 'nicht', 'so', ',', 'dass', 'mir', 'der', 'teppich', 'unter', 'den', 'füßen', 'weggezogen', 'worden', 'war', ',', 'es', 'war', 'der', 'ganze', 'boden', ',', 'der', 'mir', 'weggezogen', 'worden', 'war', '.'],
 y: ['it', '&', 'apos', ';', 's', 'not', 'that', 'i', '&', 'apos', ';', 'd', 'had', 'the', 'rug', 'pulled', 'from', 'beneath', 'me', 'as', 'much', 'as', 'the', 'entire', 'floor', 'had', 'been', 'taken', 'away', '.'],
 label: ['it', '&', 'apos', ';', 's', 'not', 'that', 'i', '&', 'apos', ';', 'd', 'had', 'the', '<UNK>', 'pulled', 'from', 'beneath', 'me', 'as', 'much', 'as', 'the', '<EOS>'],
 pred: ['peter', 'peter', 'one', 'peter', 'planets', 'ink', 'latest', 'spoken', 'spoken', 'one', 'anymore', 'planets', 'nurses', 'rope', 'peter', 'says', 'peter', 'vast', 'ink', 'began', 'planets', 'began', 'began', 'ink']
-03/06/2019 11:08:56 - INFO - main.main -   
+03/06/2019 11:15:35 - INFO - main.main -   
 x: ['wo', 'wasser', 'sich', 'verflüssigt', ',', 'wird', 'es', 'zur', 'wiege', 'neuen', 'lebens', '.', 'für', 'zellen', ',', 'die', 'grün', 'von', 'chlorophyll', 'sind', '.', 'dieser', 'molekulare', 'wunderstoff', 'ist', 'von', 'entscheidender', 'bedeutung', '.', 'er', 'ist', 'es', ',', 'der', 'alles', 'antreibt', '.'],
 y: ['and', 'where', 'water', 'is', 'liquid', ',', 'it', 'becomes', 'a', 'womb', 'for', 'cells', 'green', 'with', 'chlorophyll', '--', 'and', 'that', 'molecular', 'marvel', 'is', 'what', '&', 'apos', ';', 's', 'made', 'a', 'difference', '--', 'it', 'powers', 'everything', '.'],
 label: ['and', 'where', 'water', 'is', 'liquid', ',', 'it', 'becomes', 'a', '<UNK>', 'for', 'cells', 'green', 'with', '<UNK>', '--', 'and', 'that', 'molecular', '<UNK>', 'is', 'what', '&', '<EOS>'],
 pred: ['peter', 'nurses', 'nurses', 'planets', 'tragedy', 'ink', 'similar', 'rope', 'networks', 'ink', 'nurses', 'ink', 'ink', 'anymore', 'networks', 'peter', 'began', 'nurses', 'ink', 'gaps', 'peter', 'ink', 'ink', 'planets']
-03/06/2019 11:08:56 - INFO - main.main -   
+03/06/2019 11:15:35 - INFO - main.main -   
 x: ['wenn', 'ich', 'menschen', 'davon', 'erzähle', ',', 'dass', 'unser', 'körper', 'unser', 'bewusstsein', 'verändert', 'und', 'bewusstsein', 'unser', 'verhalten', 'und', 'dass', 'unser', 'verhalten', 'unsere', 'resultate', 'verändert', ',', 'dann', 'sagen', 'sie', ':', '&', 'quot', ';', 'ich', 'sehe', 'das', 'nicht', ',', 'es', 'fühlt', 'sich', 'künstlich', 'an', '.', '&', 'quot', ';'],
 y: ['so', 'when', 'i', 'tell', 'people', 'about', 'this', ',', 'that', 'our', 'bodies', 'change', 'our', 'minds', 'and', 'our', 'minds', 'can', 'change', 'our', 'behavior', ',', 'and', 'our', 'behavior', 'can', 'change', 'our', 'outcomes', ',', 'they', 'say', 'to', 'me', ',', '&', 'quot', ';', 'i', 'don', '&', 'apos', ';', 't', '--', 'it', 'feels', 'fake', '.', '&', 'quot', ';', 'right', '?'],
 label: ['so', 'when', 'i', 'tell', 'people', 'about', 'this', ',', 'that', 'our', 'bodies', 'change', 'our', 'minds', 'and', 'our', 'minds', 'can', 'change', 'our', 'behavior', ',', 'and', '<EOS>'],
 pred: ['visual', 'nurses', 'ink', 'planets', 'planets', 'dear', 'unbelievable', 'sheep', 'ultimate', 'peter', 'rope', 'ink', 'ink', 'ink', 'ink', 'ink', 'ink', 'ink', 'ink', 'ink', 'ink', 'ink', 'one', 'ink']
-03/06/2019 11:08:56 - INFO - main.main -   
+03/06/2019 11:15:35 - INFO - main.main -   
 x: ['für', 'andere', 'menschen', 'geschieht', 'dies', ',', 'wenn', 'sie', 'öffentlich', 'sprechen', 'müssen', ',', 'bei', 'elternratversammlungen', '.', 'oder', 'bei', 'verkaufsgesprächen', 'oder', 'vorträgen', 'wie', 'diesem', '.', 'oder', 'während', 'eines', 'vorstellungsgesprächs', '.'],
 y: ['it', 'could', 'be', ',', 'you', 'know', ',', 'for', 'some', 'people', 'it', '&', 'apos', ';', 's', 'speaking', 'at', 'a', 'school', 'board', 'meeting', '.', 'it', 'might', 'be', 'giving', 'a', 'pitch', 'or', 'giving', 'a', 'talk', 'like', 'this', 'or', 'doing', 'a', 'job', 'interview', '.'],
 label: ['it', 'could', 'be', ',', 'you', 'know', ',', 'for', 'some', 'people', 'it', '&', 'apos', ';', 's', 'speaking', 'at', 'a', 'school', 'board', 'meeting', '.', 'it', '<EOS>'],
 pred: ['peter', 'peter', 'ink', 'anymore', 'one', 'one', 'one', 'one', 'edge', 'began', 'planets', 'one', 'one', 'anymore', 'planets', 'nurses', 'paradigm', 'began', 'began', 'paradigm', 'ink', 'ink', 'ink', 'rope']
-03/06/2019 11:08:56 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
-03/06/2019 11:08:56 - INFO - main.main -   	 on Test Set 
-03/06/2019 11:08:56 - INFO - main.main -   		 loss: 8.34
-03/06/2019 11:08:56 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
-03/06/2019 11:08:56 - INFO - main.main -   Evaluation Done, update early stoping 
-03/06/2019 11:08:56 - INFO - main.main -   Model Saved.
-03/06/2019 11:08:56 - INFO - main.main -   epoch: 7/200, update_cnt: 15/400: loss: 8.30
-03/06/2019 11:08:56 - INFO - main.main -    Evaluating Model (current update_cnt:14)
-03/06/2019 11:08:56 - INFO - main.main -    	 on Training Set 
-03/06/2019 11:08:56 - INFO - main.main -   		 loss: 8.32
-03/06/2019 11:08:56 - INFO - main.main -   	 on Validation Set 
-03/06/2019 11:08:56 - INFO - main.main -   		 loss: 8.35
-03/06/2019 11:08:56 - INFO - main.main -   
+03/06/2019 11:15:35 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/06/2019 11:15:35 - INFO - main.main -   	 on Test Set 
+03/06/2019 11:15:35 - INFO - main.main -   		 loss: 8.34
+03/06/2019 11:15:35 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/06/2019 11:15:35 - INFO - main.main -   Evaluation Done, update early stoping 
+03/06/2019 11:15:35 - INFO - main.main -   Model Saved.
+03/06/2019 11:15:35 - INFO - main.main -   epoch: 7/200, update_cnt: 15/400: loss: 8.30
+03/06/2019 11:15:35 - INFO - main.main -    Evaluating Model (current update_cnt:14)
+03/06/2019 11:15:35 - INFO - main.main -    	 on Training Set 
+03/06/2019 11:15:35 - INFO - main.main -   		 loss: 8.32
+03/06/2019 11:15:35 - INFO - main.main -   	 on Validation Set 
+03/06/2019 11:15:35 - INFO - main.main -   		 loss: 8.35
+03/06/2019 11:15:35 - INFO - main.main -   
 x: ['das', 'videomaterial', 'wurde', 'von', 'unserem', '&', 'quot', ';', 'open', 'rov', '&', 'quot', ';', 'aufgenommen', ',', 'einem', 'roboter', ',', 'den', 'wir', 'in', 'unserer', 'garage', 'gebastelt', 'haben', '.'],
 y: ['all', 'the', 'footage', 'was', 'taken', 'from', 'our', 'open', 'rov', ',', 'which', 'is', 'a', 'robot', 'that', 'we', 'built', 'in', 'our', 'garage', '.'],
 label: ['all', 'the', 'footage', 'was', 'taken', 'from', 'our', 'open', '<UNK>', ',', 'which', 'is', 'a', 'robot', 'that', 'we', 'built', 'in', 'our', 'garage', '.', '<EOS>', '<PAD>', '<PAD>'],
 pred: ['visual', 'spoken', 'peter', 'peter', 'ink', 'ink', 'latest', 'one', 'club', 'peter', 'rope', 'ink', 'ink', 'ink', 'began', 'ink', 'nurses', 'nurses', 'nurses', 'ink', 'began', 'particle', 'ink', 'ink']
-03/06/2019 11:08:56 - INFO - main.main -   
+03/06/2019 11:15:35 - INFO - main.main -   
 x: ['wo', 'wasser', 'sich', 'verflüssigt', ',', 'wird', 'es', 'zur', 'wiege', 'neuen', 'lebens', '.', 'für', 'zellen', ',', 'die', 'grün', 'von', 'chlorophyll', 'sind', '.', 'dieser', 'molekulare', 'wunderstoff', 'ist', 'von', 'entscheidender', 'bedeutung', '.', 'er', 'ist', 'es', ',', 'der', 'alles', 'antreibt', '.'],
 y: ['and', 'where', 'water', 'is', 'liquid', ',', 'it', 'becomes', 'a', 'womb', 'for', 'cells', 'green', 'with', 'chlorophyll', '--', 'and', 'that', 'molecular', 'marvel', 'is', 'what', '&', 'apos', ';', 's', 'made', 'a', 'difference', '--', 'it', 'powers', 'everything', '.'],
 label: ['and', 'where', 'water', 'is', 'liquid', ',', 'it', 'becomes', 'a', '<UNK>', 'for', 'cells', 'green', 'with', '<UNK>', '--', 'and', 'that', 'molecular', '<UNK>', 'is', 'what', '&', '<EOS>'],
 pred: ['peter', 'nurses', 'nurses', 'planets', 'tragedy', 'ink', 'similar', 'rope', 'networks', 'ink', 'nurses', 'ink', 'ink', 'anymore', 'networks', 'peter', 'began', 'nurses', 'ink', 'best', 'peter', 'ink', 'ink', 'planets']
-03/06/2019 11:08:56 - INFO - main.main -   
+03/06/2019 11:15:35 - INFO - main.main -   
 x: ['wenn', 'ich', 'menschen', 'davon', 'erzähle', ',', 'dass', 'unser', 'körper', 'unser', 'bewusstsein', 'verändert', 'und', 'bewusstsein', 'unser', 'verhalten', 'und', 'dass', 'unser', 'verhalten', 'unsere', 'resultate', 'verändert', ',', 'dann', 'sagen', 'sie', ':', '&', 'quot', ';', 'ich', 'sehe', 'das', 'nicht', ',', 'es', 'fühlt', 'sich', 'künstlich', 'an', '.', '&', 'quot', ';'],
 y: ['so', 'when', 'i', 'tell', 'people', 'about', 'this', ',', 'that', 'our', 'bodies', 'change', 'our', 'minds', 'and', 'our', 'minds', 'can', 'change', 'our', 'behavior', ',', 'and', 'our', 'behavior', 'can', 'change', 'our', 'outcomes', ',', 'they', 'say', 'to', 'me', ',', '&', 'quot', ';', 'i', 'don', '&', 'apos', ';', 't', '--', 'it', 'feels', 'fake', '.', '&', 'quot', ';', 'right', '?'],
 label: ['so', 'when', 'i', 'tell', 'people', 'about', 'this', ',', 'that', 'our', 'bodies', 'change', 'our', 'minds', 'and', 'our', 'minds', 'can', 'change', 'our', 'behavior', ',', 'and', '<EOS>'],
 pred: ['visual', 'nurses', 'ink', 'planets', 'planets', 'dear', 'recent', 'sheep', 'ultimate', 'peter', 'rope', 'ink', 'ink', 'ink', 'ink', 'ink', 'ink', 'ink', 'ink', 'ink', 'ink', 'ink', 'one', 'ink']
-03/06/2019 11:08:56 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
-03/06/2019 11:08:56 - INFO - main.main -   	 on Test Set 
-03/06/2019 11:08:56 - INFO - main.main -   		 loss: 8.33
-03/06/2019 11:08:56 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
-03/06/2019 11:08:56 - INFO - main.main -   Evaluation Done, update early stoping 
-03/06/2019 11:08:56 - INFO - main.main -   Model Saved.
-03/06/2019 11:08:56 - INFO - main.main -   epoch: 8/200, update_cnt: 17/400: loss: 8.28
-03/06/2019 11:08:56 - INFO - main.main -    Evaluating Model (current update_cnt:16)
-03/06/2019 11:08:56 - INFO - main.main -    	 on Training Set 
-03/06/2019 11:08:56 - INFO - main.main -   		 loss: 8.31
-03/06/2019 11:08:56 - INFO - main.main -   	 on Validation Set 
-03/06/2019 11:08:56 - INFO - main.main -   		 loss: 8.34
-03/06/2019 11:08:56 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
-03/06/2019 11:08:56 - INFO - main.main -   	 on Test Set 
-03/06/2019 11:08:57 - INFO - main.main -   		 loss: 8.33
-03/06/2019 11:08:57 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
-03/06/2019 11:08:57 - INFO - main.main -   Evaluation Done, update early stoping 
-03/06/2019 11:08:57 - INFO - main.main -   Update patience to 10
-03/06/2019 11:08:57 - INFO - main.main -   Model Saved.
-03/06/2019 11:08:57 - INFO - main.main -   epoch: 9/200, update_cnt: 19/400: loss: 8.30
-03/06/2019 11:08:57 - INFO - main.main -    Evaluating Model (current update_cnt:18)
-03/06/2019 11:08:57 - INFO - main.main -    	 on Training Set 
-03/06/2019 11:08:57 - INFO - main.main -   		 loss: 8.30
-03/06/2019 11:08:57 - INFO - main.main -   	 on Validation Set 
-03/06/2019 11:08:57 - INFO - main.main -   		 loss: 8.34
-03/06/2019 11:08:57 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
-03/06/2019 11:08:57 - INFO - main.main -   	 on Test Set 
-03/06/2019 11:08:57 - INFO - main.main -   		 loss: 8.32
-03/06/2019 11:08:57 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
-03/06/2019 11:08:57 - INFO - main.main -   Evaluation Done, update early stoping 
-03/06/2019 11:08:57 - INFO - main.main -   Model Saved.
-03/06/2019 11:08:57 - INFO - main.main -   epoch: 10/200, update_cnt: 21/400: loss: 8.29
-03/06/2019 11:08:57 - INFO - main.main -    Evaluating Model (current update_cnt:20)
-03/06/2019 11:08:57 - INFO - main.main -    	 on Training Set 
-03/06/2019 11:08:57 - INFO - main.main -   		 loss: 8.29
-03/06/2019 11:08:57 - INFO - main.main -   	 on Validation Set 
-03/06/2019 11:08:57 - INFO - main.main -   		 loss: 8.33
-03/06/2019 11:08:57 - INFO - main.main -   
+03/06/2019 11:15:35 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/06/2019 11:15:35 - INFO - main.main -   	 on Test Set 
+03/06/2019 11:15:35 - INFO - main.main -   		 loss: 8.33
+03/06/2019 11:15:35 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/06/2019 11:15:35 - INFO - main.main -   Evaluation Done, update early stoping 
+03/06/2019 11:15:35 - INFO - main.main -   Model Saved.
+03/06/2019 11:15:35 - INFO - main.main -   epoch: 8/200, update_cnt: 17/400: loss: 8.28
+03/06/2019 11:15:35 - INFO - main.main -    Evaluating Model (current update_cnt:16)
+03/06/2019 11:15:35 - INFO - main.main -    	 on Training Set 
+03/06/2019 11:15:35 - INFO - main.main -   		 loss: 8.31
+03/06/2019 11:15:35 - INFO - main.main -   	 on Validation Set 
+03/06/2019 11:15:35 - INFO - main.main -   		 loss: 8.34
+03/06/2019 11:15:35 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/06/2019 11:15:35 - INFO - main.main -   	 on Test Set 
+03/06/2019 11:15:35 - INFO - main.main -   		 loss: 8.33
+03/06/2019 11:15:35 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/06/2019 11:15:35 - INFO - main.main -   Evaluation Done, update early stoping 
+03/06/2019 11:15:35 - INFO - main.main -   Update patience to 10
+03/06/2019 11:15:35 - INFO - main.main -   Model Saved.
+03/06/2019 11:15:35 - INFO - main.main -   epoch: 9/200, update_cnt: 19/400: loss: 8.30
+03/06/2019 11:15:35 - INFO - main.main -    Evaluating Model (current update_cnt:18)
+03/06/2019 11:15:35 - INFO - main.main -    	 on Training Set 
+03/06/2019 11:15:35 - INFO - main.main -   		 loss: 8.30
+03/06/2019 11:15:35 - INFO - main.main -   	 on Validation Set 
+03/06/2019 11:15:35 - INFO - main.main -   		 loss: 8.34
+03/06/2019 11:15:35 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/06/2019 11:15:35 - INFO - main.main -   	 on Test Set 
+03/06/2019 11:15:35 - INFO - main.main -   		 loss: 8.32
+03/06/2019 11:15:35 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/06/2019 11:15:35 - INFO - main.main -   Evaluation Done, update early stoping 
+03/06/2019 11:15:35 - INFO - main.main -   Model Saved.
+03/06/2019 11:15:35 - INFO - main.main -   epoch: 10/200, update_cnt: 21/400: loss: 8.29
+03/06/2019 11:15:35 - INFO - main.main -    Evaluating Model (current update_cnt:20)
+03/06/2019 11:15:35 - INFO - main.main -    	 on Training Set 
+03/06/2019 11:15:36 - INFO - main.main -   		 loss: 8.29
+03/06/2019 11:15:36 - INFO - main.main -   	 on Validation Set 
+03/06/2019 11:15:36 - INFO - main.main -   		 loss: 8.33
+03/06/2019 11:15:36 - INFO - main.main -   
 x: ['es', 'war', 'nicht', 'so', ',', 'dass', 'mir', 'der', 'teppich', 'unter', 'den', 'füßen', 'weggezogen', 'worden', 'war', ',', 'es', 'war', 'der', 'ganze', 'boden', ',', 'der', 'mir', 'weggezogen', 'worden', 'war', '.'],
 y: ['it', '&', 'apos', ';', 's', 'not', 'that', 'i', '&', 'apos', ';', 'd', 'had', 'the', 'rug', 'pulled', 'from', 'beneath', 'me', 'as', 'much', 'as', 'the', 'entire', 'floor', 'had', 'been', 'taken', 'away', '.'],
 label: ['it', '&', 'apos', ';', 's', 'not', 'that', 'i', '&', 'apos', ';', 'd', 'had', 'the', '<UNK>', 'pulled', 'from', 'beneath', 'me', 'as', 'much', 'as', 'the', '<EOS>'],
 pred: ['peter', 'peter', 'one', 'peter', 'planets', 'peter', 'latest', 'spoken', 'latest', 'one', 'anymore', 'planets', 'nurses', 'one', 'gaps', 'peter', 'largely', 'vast', 'ink', 'began', 'planets', 'began', 'began', 'ink']
-03/06/2019 11:08:57 - INFO - main.main -   
+03/06/2019 11:15:36 - INFO - main.main -   
 x: ['wo', 'wasser', 'sich', 'verflüssigt', ',', 'wird', 'es', 'zur', 'wiege', 'neuen', 'lebens', '.', 'für', 'zellen', ',', 'die', 'grün', 'von', 'chlorophyll', 'sind', '.', 'dieser', 'molekulare', 'wunderstoff', 'ist', 'von', 'entscheidender', 'bedeutung', '.', 'er', 'ist', 'es', ',', 'der', 'alles', 'antreibt', '.'],
 y: ['and', 'where', 'water', 'is', 'liquid', ',', 'it', 'becomes', 'a', 'womb', 'for', 'cells', 'green', 'with', 'chlorophyll', '--', 'and', 'that', 'molecular', 'marvel', 'is', 'what', '&', 'apos', ';', 's', 'made', 'a', 'difference', '--', 'it', 'powers', 'everything', '.'],
 label: ['and', 'where', 'water', 'is', 'liquid', ',', 'it', 'becomes', 'a', '<UNK>', 'for', 'cells', 'green', 'with', '<UNK>', '--', 'and', 'that', 'molecular', '<UNK>', 'is', 'what', '&', '<EOS>'],
 pred: ['peter', 'nurses', 'nurses', 'planets', 'tragedy', 'ink', 'similar', 'one', 'networks', 'ink', 'nurses', 'ink', 'ink', 'anymore', 'networks', 'peter', 'began', 'nurses', 'ink', 'best', 'peter', 'ink', 'ink', 'one']
-03/06/2019 11:08:57 - INFO - main.main -   
+03/06/2019 11:15:36 - INFO - main.main -   
 x: ['wenn', 'ich', 'menschen', 'davon', 'erzähle', ',', 'dass', 'unser', 'körper', 'unser', 'bewusstsein', 'verändert', 'und', 'bewusstsein', 'unser', 'verhalten', 'und', 'dass', 'unser', 'verhalten', 'unsere', 'resultate', 'verändert', ',', 'dann', 'sagen', 'sie', ':', '&', 'quot', ';', 'ich', 'sehe', 'das', 'nicht', ',', 'es', 'fühlt', 'sich', 'künstlich', 'an', '.', '&', 'quot', ';'],
 y: ['so', 'when', 'i', 'tell', 'people', 'about', 'this', ',', 'that', 'our', 'bodies', 'change', 'our', 'minds', 'and', 'our', 'minds', 'can', 'change', 'our', 'behavior', ',', 'and', 'our', 'behavior', 'can', 'change', 'our', 'outcomes', ',', 'they', 'say', 'to', 'me', ',', '&', 'quot', ';', 'i', 'don', '&', 'apos', ';', 't', '--', 'it', 'feels', 'fake', '.', '&', 'quot', ';', 'right', '?'],
 label: ['so', 'when', 'i', 'tell', 'people', 'about', 'this', ',', 'that', 'our', 'bodies', 'change', 'our', 'minds', 'and', 'our', 'minds', 'can', 'change', 'our', 'behavior', ',', 'and', '<EOS>'],
 pred: ['visual', 'nurses', 'ink', 'planets', 'planets', 'dear', 'however', 'sheep', 'ultimate', 'spoken', 'rope', 'rope', 'ink', 'ink', 'ink', 'ink', 'ink', 'ink', 'ink', 'ink', 'ink', 'ink', 'one', 'ink']
-03/06/2019 11:08:57 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
-03/06/2019 11:08:57 - INFO - main.main -   	 on Test Set 
-03/06/2019 11:08:57 - INFO - main.main -   		 loss: 8.32
-03/06/2019 11:08:57 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
-03/06/2019 11:08:57 - INFO - main.main -   Evaluation Done, update early stoping 
-03/06/2019 11:08:57 - INFO - main.main -   Model Saved.
-03/06/2019 11:08:57 - INFO - main.main -   !!Early stop due to run out of patience!!
-03/06/2019 11:08:57 - INFO - main.main -   Best validation loss 8.3328
-03/06/2019 11:08:57 - INFO - __main__ -   end.
+03/06/2019 11:15:36 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/06/2019 11:15:36 - INFO - main.main -   	 on Test Set 
+03/06/2019 11:15:36 - INFO - main.main -   		 loss: 8.32
+03/06/2019 11:15:36 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/06/2019 11:15:36 - INFO - main.main -   Evaluation Done, update early stoping 
+03/06/2019 11:15:36 - INFO - main.main -   Model Saved.
+03/06/2019 11:15:36 - INFO - main.main -   !!Early stop due to run out of patience!!
+03/06/2019 11:15:36 - INFO - main.main -   Best validation loss 8.3328
+03/06/2019 11:15:36 - INFO - __main__ -   end.
