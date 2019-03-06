@@ -27,13 +27,16 @@ class World(nn.Module):
 	def __init__(self, name, config):
 		super(World, self).__init__()
 
-
 		self.name = name
 
 		self.config = config
 
 		self.seed = self.config.seed
 		
+		if self.config.use_gpu:
+
+			self = self.cuda()
+
 		torch.manual_seed(self.seed)
 
 		if torch.cuda.is_available():

@@ -21,10 +21,14 @@ Following [MIXER](https://arxiv.org/pdf/1511.06732.pdf), We use data from the Ge
 The corpus consists of sentence-aligned subtitles of TED and TEDx talks. 
 
 
-### How to run? ###
+### Experiments ###
 * **parameters** 
 
 All hyper-parameters are defined in 'params.py'. They all have default values. You may change them either in the file or as arguments of 'run.py' in the 'run.sh' script. 
+Some of the important parameters for running the project are:
+ 
+ (1) --use_gpu
+ (2) --pilot
 
 * **run** 
 
