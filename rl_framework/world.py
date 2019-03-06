@@ -32,10 +32,6 @@ class World(nn.Module):
 		self.config = config
 
 		self.seed = self.config.seed
-		
-		if self.config.use_gpu:
-
-			self = self.cuda()
 
 		torch.manual_seed(self.seed)
 
@@ -52,6 +48,12 @@ class World(nn.Module):
 		self.np2var = np2var
 
 		self.use_gpu = config.use_gpu
+
+		if self.use_gpu:
+
+			self.agent = self.agent.cuda()
+
+			self.environment = self.environment.cuda()
 
 
 		self.pad_index = self.config.lang_y.word2index[self.config.lang_y.pad_word]
