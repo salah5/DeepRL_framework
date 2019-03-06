@@ -1,0 +1,270 @@
+03/05/2019 15:27:09 - INFO - __main__ -   start.
+03/05/2019 15:27:09 - INFO - main.main -   datasets are prepared
+03/05/2019 15:27:09 - INFO - main.main -   lang info loaded
+03/05/2019 15:27:10 - INFO - data_processing.dataset_loader -   datasets are loaded: ./data/train.de, ./data/train.en 
+03/05/2019 15:27:10 - INFO - data_processing.dataset_loader -   dataset size: 153348 
+03/05/2019 15:27:17 - INFO - data_processing.dataset_loader -   converted words to index and padding
+03/05/2019 15:27:17 - INFO - data_processing.dataset_loader -   datasets are loaded: ./data/valid.de, ./data/valid.en 
+03/05/2019 15:27:17 - INFO - data_processing.dataset_loader -   dataset size: 6970 
+03/05/2019 15:27:17 - INFO - data_processing.dataset_loader -   converted words to index and padding
+03/05/2019 15:27:17 - INFO - data_processing.dataset_loader -   datasets are loaded: ./data/test.de, ./data/test.en 
+03/05/2019 15:27:17 - INFO - data_processing.dataset_loader -   dataset size: 6750 
+03/05/2019 15:27:18 - INFO - data_processing.dataset_loader -   converted words to index and padding
+03/05/2019 15:27:18 - INFO - main.main -   number of train batches: 51116 for batch_size: 3
+03/05/2019 15:27:18 - INFO - main.main -   shrinking dataset: number of train batches: 2 for batch_size: 3
+03/05/2019 15:27:18 - INFO - main.main -   World (
+  (env): Environment(
+    (seq2seq): EncDec(
+      (x_embeddings): Embeddings(
+        (embed): Embedding(4000, 4, padding_idx=0)
+      )
+      (dec_emb_layer): Embeddings(
+        (embed): Embedding(4000, 4, padding_idx=0)
+      )
+      (x_encoder): EncoderRNN(
+        (input_dropout): Dropout(p=0)
+        (rnn): GRU(4, 6, batch_first=True, dropout=0.3)
+      )
+      (decoder): DecoderRNN(
+        (input_dropout): Dropout(p=0.3)
+        (rnn): GRU(4, 6, batch_first=True, dropout=0.3)
+        (embedding): Embeddings(
+          (embed): Embedding(4000, 4, padding_idx=0)
+        )
+        (project): Linear(in_features=6, out_features=4000, bias=True)
+      )
+    )
+  ), parameters=60432
+  (agent): Agent(
+    (softmax): SoftMax(
+      (project): Linear(in_features=6, out_features=4000, bias=True)
+    )
+  ), parameters=28000
+  (nll_loss): NLLEntropy(), parameters=0
+  (cat_kl_loss): CatKLLoss(), parameters=0
+  (cross_ent_loss): CrossEntropyoss(), parameters=0
+  (entropy_loss): Entropy(), parameters=0
+) Total Parameters=88432
+03/05/2019 15:27:18 - INFO - main.main -   **** Training Begins ****
+03/05/2019 15:27:18 - INFO - main.main -   epoch: 0/200, update_cnt: 1/400: loss: 8.31
+03/05/2019 15:27:18 - INFO - main.main -    Evaluating Model (current update_cnt:0)
+03/05/2019 15:27:18 - INFO - main.main -    	 on Training Set 
+03/05/2019 15:27:18 - INFO - main.main -   		 loss: 8.32
+03/05/2019 15:27:18 - INFO - main.main -   	 on Validation Set 
+03/05/2019 15:27:18 - INFO - main.main -   		 loss: 8.32
+03/05/2019 15:27:18 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/05/2019 15:27:18 - INFO - main.main -   	 on Test Set 
+03/05/2019 15:27:18 - INFO - main.main -   		 loss: 8.34
+03/05/2019 15:27:18 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/05/2019 15:27:18 - INFO - main.main -   Evaluation Done, update early stoping 
+03/05/2019 15:27:18 - INFO - main.main -   Update patience to 10
+03/05/2019 15:27:18 - INFO - main.main -   Model Saved.
+03/05/2019 15:27:18 - INFO - main.main -   epoch: 1/200, update_cnt: 3/400: loss: 8.33
+03/05/2019 15:27:18 - INFO - main.main -    Evaluating Model (current update_cnt:2)
+03/05/2019 15:27:18 - INFO - main.main -    	 on Training Set 
+03/05/2019 15:27:19 - INFO - main.main -   		 loss: 8.31
+03/05/2019 15:27:19 - INFO - main.main -   	 on Validation Set 
+03/05/2019 15:27:19 - INFO - main.main -   		 loss: 8.32
+03/05/2019 15:27:19 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/05/2019 15:27:19 - INFO - main.main -   	 on Test Set 
+03/05/2019 15:27:19 - INFO - main.main -   		 loss: 8.33
+03/05/2019 15:27:19 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/05/2019 15:27:19 - INFO - main.main -   Evaluation Done, update early stoping 
+03/05/2019 15:27:19 - INFO - main.main -   Model Saved.
+03/05/2019 15:27:19 - INFO - main.main -   epoch: 2/200, update_cnt: 5/400: loss: 8.29
+03/05/2019 15:27:19 - INFO - main.main -    Evaluating Model (current update_cnt:4)
+03/05/2019 15:27:19 - INFO - main.main -    	 on Training Set 
+03/05/2019 15:27:19 - INFO - main.main -   		 loss: 8.31
+03/05/2019 15:27:19 - INFO - main.main -   	 on Validation Set 
+03/05/2019 15:27:19 - INFO - main.main -   		 loss: 8.32
+03/05/2019 15:27:19 - INFO - main.main -   
+x: ['wo', 'wasser', 'sich', 'verflüssigt', ',', 'wird', 'es', 'zur', 'wiege', 'neuen', 'lebens', '.', 'für', 'zellen', ',', 'die', 'grün', 'von', 'chlorophyll', 'sind', '.', 'dieser', 'molekulare', 'wunderstoff', 'ist', 'von', 'entscheidender', 'bedeutung', '.', 'er', 'ist', 'es', ',', 'der', 'alles', 'antreibt', '.'],
+y: ['and', 'where', 'water', 'is', 'liquid', ',', 'it', 'becomes', 'a', 'womb', 'for', 'cells', 'green', 'with', 'chlorophyll', '--', 'and', 'that', 'molecular', 'marvel', 'is', 'what', '&', 'apos', ';', 's', 'made', 'a', 'difference', '--', 'it', 'powers', 'everything', '.'],
+label: ['and', 'where', 'water', 'is', 'liquid', ',', 'it', 'becomes', 'a', '<UNK>', 'for', 'cells', 'green', 'with', '<UNK>', '--', 'and', 'that', 'molecular', '<UNK>', 'is', 'what', '&', '<EOS>'],
+pred: ['distance', 'pacific', 'distance', 'distance', 'distance', 'dinner', 'dinner', 'analogy', 'contain', 'contain', 'california', 'dinner', 'dinner', 'dinner', 'greater', 'learn', 'fires', 'trouble', 'evolutionary', 'greater', 'leads', 'greater', 'perhaps', 'perhaps']
+03/05/2019 15:27:19 - INFO - main.main -   
+x: ['und', 'es', 'ist', 'ein', 'echter', 'vollzeitjob', ',', 'die', 'menschen', ',', 'die', 'angst', 'vor', 'diesen', 'ideen', 'haben', ',', 'daran', 'zu', 'hindern', ',', 'sie', 'zu', 'karikieren', 'und', 'unlautere', 'ziele', 'damit', 'zu', 'verfolgen', '.'],
+y: ['and', 'it', '&', 'apos', ';', 's', 'just', 'about', 'a', 'full-time', 'job', 'trying', 'to', 'prevent', 'people', 'who', 'are', 'scared', 'of', 'these', 'ideas', 'from', 'caricaturing', 'them', 'and', 'then', 'running', 'off', 'to', 'one', 'dire', 'purpose', 'or', 'another', '.'],
+label: ['and', 'it', '&', 'apos', ';', 's', 'just', 'about', 'a', '<UNK>', 'job', 'trying', 'to', 'prevent', 'people', 'who', 'are', 'scared', 'of', 'these', 'ideas', 'from', '<UNK>', '<EOS>'],
+pred: ['distance', 'hold', 'pacific', 'fixed', 'fires', 'perhaps', 'hold', 'number', 'smoke', 'distance', 'greater', 'cure', 'guns', 'fixed', 'pacific', 'smoke', 'dinner', 'greater', 'perhaps', '20,000', 'immediate', 'sacred', 'terrible', 'greater']
+03/05/2019 15:27:19 - INFO - main.main -   
+x: ['wenn', 'ich', 'menschen', 'davon', 'erzähle', ',', 'dass', 'unser', 'körper', 'unser', 'bewusstsein', 'verändert', 'und', 'bewusstsein', 'unser', 'verhalten', 'und', 'dass', 'unser', 'verhalten', 'unsere', 'resultate', 'verändert', ',', 'dann', 'sagen', 'sie', ':', '&', 'quot', ';', 'ich', 'sehe', 'das', 'nicht', ',', 'es', 'fühlt', 'sich', 'künstlich', 'an', '.', '&', 'quot', ';'],
+y: ['so', 'when', 'i', 'tell', 'people', 'about', 'this', ',', 'that', 'our', 'bodies', 'change', 'our', 'minds', 'and', 'our', 'minds', 'can', 'change', 'our', 'behavior', ',', 'and', 'our', 'behavior', 'can', 'change', 'our', 'outcomes', ',', 'they', 'say', 'to', 'me', ',', '&', 'quot', ';', 'i', 'don', '&', 'apos', ';', 't', '--', 'it', 'feels', 'fake', '.', '&', 'quot', ';', 'right', '?'],
+label: ['so', 'when', 'i', 'tell', 'people', 'about', 'this', ',', 'that', 'our', 'bodies', 'change', 'our', 'minds', 'and', 'our', 'minds', 'can', 'change', 'our', 'behavior', ',', 'and', '<EOS>'],
+pred: ['distance', 'distance', 'string', 'analogy', 'distance', 'smoke', 'distance', 'sacred', 'sacred', 'evolutionary', 'perhaps', 'perhaps', 'distance', 'perhaps', 'dinner', 'analogy', 'perhaps', 'dinner', 'fixed', 'distance', 'perhaps', 'fixed', 'string', 'analogy']
+03/05/2019 15:27:19 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/05/2019 15:27:19 - INFO - main.main -   	 on Test Set 
+03/05/2019 15:27:19 - INFO - main.main -   		 loss: 8.33
+03/05/2019 15:27:19 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/05/2019 15:27:19 - INFO - main.main -   Evaluation Done, update early stoping 
+03/05/2019 15:27:19 - INFO - main.main -   Model Saved.
+03/05/2019 15:27:19 - INFO - main.main -   epoch: 3/200, update_cnt: 7/400: loss: 8.28
+03/05/2019 15:27:19 - INFO - main.main -    Evaluating Model (current update_cnt:6)
+03/05/2019 15:27:19 - INFO - main.main -    	 on Training Set 
+03/05/2019 15:27:19 - INFO - main.main -   		 loss: 8.30
+03/05/2019 15:27:19 - INFO - main.main -   	 on Validation Set 
+03/05/2019 15:27:19 - INFO - main.main -   		 loss: 8.31
+03/05/2019 15:27:19 - INFO - main.main -   
+x: ['es', 'war', 'nicht', 'so', ',', 'dass', 'mir', 'der', 'teppich', 'unter', 'den', 'füßen', 'weggezogen', 'worden', 'war', ',', 'es', 'war', 'der', 'ganze', 'boden', ',', 'der', 'mir', 'weggezogen', 'worden', 'war', '.'],
+y: ['it', '&', 'apos', ';', 's', 'not', 'that', 'i', '&', 'apos', ';', 'd', 'had', 'the', 'rug', 'pulled', 'from', 'beneath', 'me', 'as', 'much', 'as', 'the', 'entire', 'floor', 'had', 'been', 'taken', 'away', '.'],
+label: ['it', '&', 'apos', ';', 's', 'not', 'that', 'i', '&', 'apos', ';', 'd', 'had', 'the', '<UNK>', 'pulled', 'from', 'beneath', 'me', 'as', 'much', 'as', 'the', '<EOS>'],
+pred: ['distance', 'smoke', 'smoke', 'fixed', 'perhaps', 'hold', 'distance', 'evolutionary', 'perhaps', 'ought', 'fires', 'perhaps', 'hold', 'distance', 'circuits', 'greater', 'dinner', 'greater', 'fires', 'trouble', 'fires', 'number', 'fires', 'hold']
+03/05/2019 15:27:19 - INFO - main.main -   
+x: ['wo', 'wasser', 'sich', 'verflüssigt', ',', 'wird', 'es', 'zur', 'wiege', 'neuen', 'lebens', '.', 'für', 'zellen', ',', 'die', 'grün', 'von', 'chlorophyll', 'sind', '.', 'dieser', 'molekulare', 'wunderstoff', 'ist', 'von', 'entscheidender', 'bedeutung', '.', 'er', 'ist', 'es', ',', 'der', 'alles', 'antreibt', '.'],
+y: ['and', 'where', 'water', 'is', 'liquid', ',', 'it', 'becomes', 'a', 'womb', 'for', 'cells', 'green', 'with', 'chlorophyll', '--', 'and', 'that', 'molecular', 'marvel', 'is', 'what', '&', 'apos', ';', 's', 'made', 'a', 'difference', '--', 'it', 'powers', 'everything', '.'],
+label: ['and', 'where', 'water', 'is', 'liquid', ',', 'it', 'becomes', 'a', '<UNK>', 'for', 'cells', 'green', 'with', '<UNK>', '--', 'and', 'that', 'molecular', '<UNK>', 'is', 'what', '&', '<EOS>'],
+pred: ['distance', 'hold', 'distance', 'distance', 'distance', 'dinner', 'dinner', 'analogy', 'contain', 'contain', 'greater', 'dinner', 'dinner', 'dinner', 'greater', 'learn', 'fires', 'trouble', 'evolutionary', 'greater', 'leads', 'greater', 'perhaps', 'perhaps']
+03/05/2019 15:27:19 - INFO - main.main -   
+x: ['und', 'es', 'ist', 'ein', 'echter', 'vollzeitjob', ',', 'die', 'menschen', ',', 'die', 'angst', 'vor', 'diesen', 'ideen', 'haben', ',', 'daran', 'zu', 'hindern', ',', 'sie', 'zu', 'karikieren', 'und', 'unlautere', 'ziele', 'damit', 'zu', 'verfolgen', '.'],
+y: ['and', 'it', '&', 'apos', ';', 's', 'just', 'about', 'a', 'full-time', 'job', 'trying', 'to', 'prevent', 'people', 'who', 'are', 'scared', 'of', 'these', 'ideas', 'from', 'caricaturing', 'them', 'and', 'then', 'running', 'off', 'to', 'one', 'dire', 'purpose', 'or', 'another', '.'],
+label: ['and', 'it', '&', 'apos', ';', 's', 'just', 'about', 'a', '<UNK>', 'job', 'trying', 'to', 'prevent', 'people', 'who', 'are', 'scared', 'of', 'these', 'ideas', 'from', '<UNK>', '<EOS>'],
+pred: ['distance', 'hold', 'pacific', 'fixed', 'fires', 'perhaps', 'hold', 'number', 'smoke', 'distance', 'greater', 'cure', 'guns', 'fixed', 'pacific', 'smoke', 'dinner', 'greater', 'perhaps', '20,000', 'immediate', 'sacred', 'terrible', 'greater']
+03/05/2019 15:27:19 - INFO - main.main -   
+x: ['für', 'andere', 'menschen', 'geschieht', 'dies', ',', 'wenn', 'sie', 'öffentlich', 'sprechen', 'müssen', ',', 'bei', 'elternratversammlungen', '.', 'oder', 'bei', 'verkaufsgesprächen', 'oder', 'vorträgen', 'wie', 'diesem', '.', 'oder', 'während', 'eines', 'vorstellungsgesprächs', '.'],
+y: ['it', 'could', 'be', ',', 'you', 'know', ',', 'for', 'some', 'people', 'it', '&', 'apos', ';', 's', 'speaking', 'at', 'a', 'school', 'board', 'meeting', '.', 'it', 'might', 'be', 'giving', 'a', 'pitch', 'or', 'giving', 'a', 'talk', 'like', 'this', 'or', 'doing', 'a', 'job', 'interview', '.'],
+label: ['it', 'could', 'be', ',', 'you', 'know', ',', 'for', 'some', 'people', 'it', '&', 'apos', ';', 's', 'speaking', 'at', 'a', 'school', 'board', 'meeting', '.', 'it', '<EOS>'],
+pred: ['distance', 'smoke', 'smoke', 'smoke', 'string', 'evolutionary', 'distance', 'distance', 'contain', 'contain', 'smoke', 'fixed', 'fixed', 'fires', 'perhaps', 'hold', 'distance', 'perhaps', 'perhaps', 'fixed', 'guns', 'analogy', 'analogy', 'fixed']
+03/05/2019 15:27:19 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/05/2019 15:27:19 - INFO - main.main -   	 on Test Set 
+03/05/2019 15:27:19 - INFO - main.main -   		 loss: 8.33
+03/05/2019 15:27:19 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/05/2019 15:27:19 - INFO - main.main -   Evaluation Done, update early stoping 
+03/05/2019 15:27:19 - INFO - main.main -   Model Saved.
+03/05/2019 15:27:19 - INFO - main.main -   epoch: 4/200, update_cnt: 9/400: loss: 8.30
+03/05/2019 15:27:19 - INFO - main.main -    Evaluating Model (current update_cnt:8)
+03/05/2019 15:27:19 - INFO - main.main -    	 on Training Set 
+03/05/2019 15:27:19 - INFO - main.main -   		 loss: 8.29
+03/05/2019 15:27:19 - INFO - main.main -   	 on Validation Set 
+03/05/2019 15:27:19 - INFO - main.main -   		 loss: 8.31
+03/05/2019 15:27:19 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/05/2019 15:27:19 - INFO - main.main -   	 on Test Set 
+03/05/2019 15:27:19 - INFO - main.main -   		 loss: 8.32
+03/05/2019 15:27:19 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/05/2019 15:27:19 - INFO - main.main -   Evaluation Done, update early stoping 
+03/05/2019 15:27:19 - INFO - main.main -   Model Saved.
+03/05/2019 15:27:20 - INFO - main.main -   epoch: 5/200, update_cnt: 11/400: loss: 8.28
+03/05/2019 15:27:20 - INFO - main.main -    Evaluating Model (current update_cnt:10)
+03/05/2019 15:27:20 - INFO - main.main -    	 on Training Set 
+03/05/2019 15:27:20 - INFO - main.main -   		 loss: 8.28
+03/05/2019 15:27:20 - INFO - main.main -   	 on Validation Set 
+03/05/2019 15:27:20 - INFO - main.main -   		 loss: 8.31
+03/05/2019 15:27:20 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/05/2019 15:27:20 - INFO - main.main -   	 on Test Set 
+03/05/2019 15:27:20 - INFO - main.main -   		 loss: 8.32
+03/05/2019 15:27:20 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/05/2019 15:27:20 - INFO - main.main -   Evaluation Done, update early stoping 
+03/05/2019 15:27:20 - INFO - main.main -   Model Saved.
+03/05/2019 15:27:20 - INFO - main.main -   epoch: 6/200, update_cnt: 13/400: loss: 8.26
+03/05/2019 15:27:20 - INFO - main.main -    Evaluating Model (current update_cnt:12)
+03/05/2019 15:27:20 - INFO - main.main -    	 on Training Set 
+03/05/2019 15:27:20 - INFO - main.main -   		 loss: 8.28
+03/05/2019 15:27:20 - INFO - main.main -   	 on Validation Set 
+03/05/2019 15:27:20 - INFO - main.main -   		 loss: 8.30
+03/05/2019 15:27:20 - INFO - main.main -   
+x: ['es', 'war', 'nicht', 'so', ',', 'dass', 'mir', 'der', 'teppich', 'unter', 'den', 'füßen', 'weggezogen', 'worden', 'war', ',', 'es', 'war', 'der', 'ganze', 'boden', ',', 'der', 'mir', 'weggezogen', 'worden', 'war', '.'],
+y: ['it', '&', 'apos', ';', 's', 'not', 'that', 'i', '&', 'apos', ';', 'd', 'had', 'the', 'rug', 'pulled', 'from', 'beneath', 'me', 'as', 'much', 'as', 'the', 'entire', 'floor', 'had', 'been', 'taken', 'away', '.'],
+label: ['it', '&', 'apos', ';', 's', 'not', 'that', 'i', '&', 'apos', ';', 'd', 'had', 'the', '<UNK>', 'pulled', 'from', 'beneath', 'me', 'as', 'much', 'as', 'the', '<EOS>'],
+pred: ['distance', 'smoke', 'think', 'fires', 'perhaps', 'think', 'distance', 'perhaps', 'perhaps', 'ought', 'fires', 'perhaps', 'hold', 'distance', 'circuits', 'greater', 'greater', 'greater', 'fires', 'trouble', 'fires', 'number', 'fires', 'hold']
+03/05/2019 15:27:20 - INFO - main.main -   
+x: ['wo', 'wasser', 'sich', 'verflüssigt', ',', 'wird', 'es', 'zur', 'wiege', 'neuen', 'lebens', '.', 'für', 'zellen', ',', 'die', 'grün', 'von', 'chlorophyll', 'sind', '.', 'dieser', 'molekulare', 'wunderstoff', 'ist', 'von', 'entscheidender', 'bedeutung', '.', 'er', 'ist', 'es', ',', 'der', 'alles', 'antreibt', '.'],
+y: ['and', 'where', 'water', 'is', 'liquid', ',', 'it', 'becomes', 'a', 'womb', 'for', 'cells', 'green', 'with', 'chlorophyll', '--', 'and', 'that', 'molecular', 'marvel', 'is', 'what', '&', 'apos', ';', 's', 'made', 'a', 'difference', '--', 'it', 'powers', 'everything', '.'],
+label: ['and', 'where', 'water', 'is', 'liquid', ',', 'it', 'becomes', 'a', '<UNK>', 'for', 'cells', 'green', 'with', '<UNK>', '--', 'and', 'that', 'molecular', '<UNK>', 'is', 'what', '&', '<EOS>'],
+pred: ['distance', 'hold', 'distance', 'distance', 'distance', 'dinner', 'dinner', 'analogy', 'contain', 'contain', 'greater', 'dinner', 'dinner', 'dinner', 'greater', 'learn', 'fires', 'trouble', 'evolutionary', 'greater', 'leads', 'greater', 'perhaps', 'perhaps']
+03/05/2019 15:27:20 - INFO - main.main -   
+x: ['wenn', 'ich', 'menschen', 'davon', 'erzähle', ',', 'dass', 'unser', 'körper', 'unser', 'bewusstsein', 'verändert', 'und', 'bewusstsein', 'unser', 'verhalten', 'und', 'dass', 'unser', 'verhalten', 'unsere', 'resultate', 'verändert', ',', 'dann', 'sagen', 'sie', ':', '&', 'quot', ';', 'ich', 'sehe', 'das', 'nicht', ',', 'es', 'fühlt', 'sich', 'künstlich', 'an', '.', '&', 'quot', ';'],
+y: ['so', 'when', 'i', 'tell', 'people', 'about', 'this', ',', 'that', 'our', 'bodies', 'change', 'our', 'minds', 'and', 'our', 'minds', 'can', 'change', 'our', 'behavior', ',', 'and', 'our', 'behavior', 'can', 'change', 'our', 'outcomes', ',', 'they', 'say', 'to', 'me', ',', '&', 'quot', ';', 'i', 'don', '&', 'apos', ';', 't', '--', 'it', 'feels', 'fake', '.', '&', 'quot', ';', 'right', '?'],
+label: ['so', 'when', 'i', 'tell', 'people', 'about', 'this', ',', 'that', 'our', 'bodies', 'change', 'our', 'minds', 'and', 'our', 'minds', 'can', 'change', 'our', 'behavior', ',', 'and', '<EOS>'],
+pred: ['distance', 'distance', 'string', 'analogy', 'distance', 'smoke', 'distance', 'sacred', 'sacred', 'evolutionary', 'perhaps', 'perhaps', 'distance', 'perhaps', 'perhaps', 'analogy', 'think', 'dinner', 'fixed', 'distance', 'perhaps', 'fixed', 'string', 'analogy']
+03/05/2019 15:27:20 - INFO - main.main -   
+x: ['für', 'andere', 'menschen', 'geschieht', 'dies', ',', 'wenn', 'sie', 'öffentlich', 'sprechen', 'müssen', ',', 'bei', 'elternratversammlungen', '.', 'oder', 'bei', 'verkaufsgesprächen', 'oder', 'vorträgen', 'wie', 'diesem', '.', 'oder', 'während', 'eines', 'vorstellungsgesprächs', '.'],
+y: ['it', 'could', 'be', ',', 'you', 'know', ',', 'for', 'some', 'people', 'it', '&', 'apos', ';', 's', 'speaking', 'at', 'a', 'school', 'board', 'meeting', '.', 'it', 'might', 'be', 'giving', 'a', 'pitch', 'or', 'giving', 'a', 'talk', 'like', 'this', 'or', 'doing', 'a', 'job', 'interview', '.'],
+label: ['it', 'could', 'be', ',', 'you', 'know', ',', 'for', 'some', 'people', 'it', '&', 'apos', ';', 's', 'speaking', 'at', 'a', 'school', 'board', 'meeting', '.', 'it', '<EOS>'],
+pred: ['distance', 'smoke', 'smoke', 'smoke', 'string', 'evolutionary', 'distance', 'distance', 'contain', 'contain', 'chicken', 'fixed', 'fixed', 'fires', 'perhaps', 'think', 'distance', 'perhaps', 'perhaps', 'fixed', 'guns', 'analogy', 'analogy', 'fixed']
+03/05/2019 15:27:20 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/05/2019 15:27:20 - INFO - main.main -   	 on Test Set 
+03/05/2019 15:27:20 - INFO - main.main -   		 loss: 8.32
+03/05/2019 15:27:20 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/05/2019 15:27:20 - INFO - main.main -   Evaluation Done, update early stoping 
+03/05/2019 15:27:20 - INFO - main.main -   Model Saved.
+03/05/2019 15:27:20 - INFO - main.main -   epoch: 7/200, update_cnt: 15/400: loss: 8.26
+03/05/2019 15:27:20 - INFO - main.main -    Evaluating Model (current update_cnt:14)
+03/05/2019 15:27:20 - INFO - main.main -    	 on Training Set 
+03/05/2019 15:27:20 - INFO - main.main -   		 loss: 8.27
+03/05/2019 15:27:20 - INFO - main.main -   	 on Validation Set 
+03/05/2019 15:27:20 - INFO - main.main -   		 loss: 8.30
+03/05/2019 15:27:20 - INFO - main.main -   
+x: ['das', 'videomaterial', 'wurde', 'von', 'unserem', '&', 'quot', ';', 'open', 'rov', '&', 'quot', ';', 'aufgenommen', ',', 'einem', 'roboter', ',', 'den', 'wir', 'in', 'unserer', 'garage', 'gebastelt', 'haben', '.'],
+y: ['all', 'the', 'footage', 'was', 'taken', 'from', 'our', 'open', 'rov', ',', 'which', 'is', 'a', 'robot', 'that', 'we', 'built', 'in', 'our', 'garage', '.'],
+label: ['all', 'the', 'footage', 'was', 'taken', 'from', 'our', 'open', '<UNK>', ',', 'which', 'is', 'a', 'robot', 'that', 'we', 'built', 'in', 'our', 'garage', '.', '<EOS>', '<PAD>', '<PAD>'],
+pred: ['perhaps', 'think', 'circuits', 'think', 'fixed', 'pacific', 'greater', 'perhaps', 'peace', 'greater', 'dinner', 'analogy', 'thrown', 'contain', 'hold', 'evolutionary', 'fires', 'citizens', 'distance', 'perhaps', 'hold', 'producing', 'hold', 'think']
+03/05/2019 15:27:20 - INFO - main.main -   
+x: ['wo', 'wasser', 'sich', 'verflüssigt', ',', 'wird', 'es', 'zur', 'wiege', 'neuen', 'lebens', '.', 'für', 'zellen', ',', 'die', 'grün', 'von', 'chlorophyll', 'sind', '.', 'dieser', 'molekulare', 'wunderstoff', 'ist', 'von', 'entscheidender', 'bedeutung', '.', 'er', 'ist', 'es', ',', 'der', 'alles', 'antreibt', '.'],
+y: ['and', 'where', 'water', 'is', 'liquid', ',', 'it', 'becomes', 'a', 'womb', 'for', 'cells', 'green', 'with', 'chlorophyll', '--', 'and', 'that', 'molecular', 'marvel', 'is', 'what', '&', 'apos', ';', 's', 'made', 'a', 'difference', '--', 'it', 'powers', 'everything', '.'],
+label: ['and', 'where', 'water', 'is', 'liquid', ',', 'it', 'becomes', 'a', '<UNK>', 'for', 'cells', 'green', 'with', '<UNK>', '--', 'and', 'that', 'molecular', '<UNK>', 'is', 'what', '&', '<EOS>'],
+pred: ['distance', 'hold', 'distance', 'distance', 'distance', 'dinner', 'dinner', 'analogy', 'analogy', 'contain', 'greater', 'dinner', 'dinner', 'dinner', 'greater', 'learn', 'fires', 'trouble', 'evolutionary', 'greater', 'leads', 'greater', 'perhaps', 'perhaps']
+03/05/2019 15:27:20 - INFO - main.main -   
+x: ['wenn', 'ich', 'menschen', 'davon', 'erzähle', ',', 'dass', 'unser', 'körper', 'unser', 'bewusstsein', 'verändert', 'und', 'bewusstsein', 'unser', 'verhalten', 'und', 'dass', 'unser', 'verhalten', 'unsere', 'resultate', 'verändert', ',', 'dann', 'sagen', 'sie', ':', '&', 'quot', ';', 'ich', 'sehe', 'das', 'nicht', ',', 'es', 'fühlt', 'sich', 'künstlich', 'an', '.', '&', 'quot', ';'],
+y: ['so', 'when', 'i', 'tell', 'people', 'about', 'this', ',', 'that', 'our', 'bodies', 'change', 'our', 'minds', 'and', 'our', 'minds', 'can', 'change', 'our', 'behavior', ',', 'and', 'our', 'behavior', 'can', 'change', 'our', 'outcomes', ',', 'they', 'say', 'to', 'me', ',', '&', 'quot', ';', 'i', 'don', '&', 'apos', ';', 't', '--', 'it', 'feels', 'fake', '.', '&', 'quot', ';', 'right', '?'],
+label: ['so', 'when', 'i', 'tell', 'people', 'about', 'this', ',', 'that', 'our', 'bodies', 'change', 'our', 'minds', 'and', 'our', 'minds', 'can', 'change', 'our', 'behavior', ',', 'and', '<EOS>'],
+pred: ['distance', 'distance', 'string', 'analogy', 'distance', 'smoke', 'think', 'sacred', 'sacred', 'evolutionary', 'perhaps', 'perhaps', 'distance', 'perhaps', 'perhaps', 'analogy', 'think', 'dinner', 'fixed', 'distance', 'perhaps', 'fixed', 'string', 'analogy']
+03/05/2019 15:27:21 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/05/2019 15:27:21 - INFO - main.main -   	 on Test Set 
+03/05/2019 15:27:21 - INFO - main.main -   		 loss: 8.31
+03/05/2019 15:27:21 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/05/2019 15:27:21 - INFO - main.main -   Evaluation Done, update early stoping 
+03/05/2019 15:27:21 - INFO - main.main -   Model Saved.
+03/05/2019 15:27:21 - INFO - main.main -   epoch: 8/200, update_cnt: 17/400: loss: 8.26
+03/05/2019 15:27:21 - INFO - main.main -    Evaluating Model (current update_cnt:16)
+03/05/2019 15:27:21 - INFO - main.main -    	 on Training Set 
+03/05/2019 15:27:21 - INFO - main.main -   		 loss: 8.26
+03/05/2019 15:27:21 - INFO - main.main -   	 on Validation Set 
+03/05/2019 15:27:21 - INFO - main.main -   		 loss: 8.29
+03/05/2019 15:27:21 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/05/2019 15:27:21 - INFO - main.main -   	 on Test Set 
+03/05/2019 15:27:21 - INFO - main.main -   		 loss: 8.31
+03/05/2019 15:27:21 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/05/2019 15:27:21 - INFO - main.main -   Evaluation Done, update early stoping 
+03/05/2019 15:27:21 - INFO - main.main -   Model Saved.
+03/05/2019 15:27:21 - INFO - main.main -   epoch: 9/200, update_cnt: 19/400: loss: 8.24
+03/05/2019 15:27:21 - INFO - main.main -    Evaluating Model (current update_cnt:18)
+03/05/2019 15:27:21 - INFO - main.main -    	 on Training Set 
+03/05/2019 15:27:21 - INFO - main.main -   		 loss: 8.25
+03/05/2019 15:27:21 - INFO - main.main -   	 on Validation Set 
+03/05/2019 15:27:21 - INFO - main.main -   		 loss: 8.29
+03/05/2019 15:27:21 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/05/2019 15:27:21 - INFO - main.main -   	 on Test Set 
+03/05/2019 15:27:21 - INFO - main.main -   		 loss: 8.31
+03/05/2019 15:27:21 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/05/2019 15:27:21 - INFO - main.main -   Evaluation Done, update early stoping 
+03/05/2019 15:27:21 - INFO - main.main -   Model Saved.
+03/05/2019 15:27:21 - INFO - main.main -   epoch: 10/200, update_cnt: 21/400: loss: 8.25
+03/05/2019 15:27:21 - INFO - main.main -    Evaluating Model (current update_cnt:20)
+03/05/2019 15:27:21 - INFO - main.main -    	 on Training Set 
+03/05/2019 15:27:21 - INFO - main.main -   		 loss: 8.25
+03/05/2019 15:27:21 - INFO - main.main -   	 on Validation Set 
+03/05/2019 15:27:21 - INFO - main.main -   		 loss: 8.29
+03/05/2019 15:27:21 - INFO - main.main -   
+x: ['es', 'war', 'nicht', 'so', ',', 'dass', 'mir', 'der', 'teppich', 'unter', 'den', 'füßen', 'weggezogen', 'worden', 'war', ',', 'es', 'war', 'der', 'ganze', 'boden', ',', 'der', 'mir', 'weggezogen', 'worden', 'war', '.'],
+y: ['it', '&', 'apos', ';', 's', 'not', 'that', 'i', '&', 'apos', ';', 'd', 'had', 'the', 'rug', 'pulled', 'from', 'beneath', 'me', 'as', 'much', 'as', 'the', 'entire', 'floor', 'had', 'been', 'taken', 'away', '.'],
+label: ['it', '&', 'apos', ';', 's', 'not', 'that', 'i', '&', 'apos', ';', 'd', 'had', 'the', '<UNK>', 'pulled', 'from', 'beneath', 'me', 'as', 'much', 'as', 'the', '<EOS>'],
+pred: ['distance', 'think', 'think', 'fires', 'perhaps', 'think', 'reform', 'perhaps', 'perhaps', 'ought', 'fires', 'perhaps', 'think', 'peace', 'circuits', 'greater', 'greater', 'greater', 'fires', 'wood', 'fires', 'number', 'fires', 'hold']
+03/05/2019 15:27:21 - INFO - main.main -   
+x: ['wo', 'wasser', 'sich', 'verflüssigt', ',', 'wird', 'es', 'zur', 'wiege', 'neuen', 'lebens', '.', 'für', 'zellen', ',', 'die', 'grün', 'von', 'chlorophyll', 'sind', '.', 'dieser', 'molekulare', 'wunderstoff', 'ist', 'von', 'entscheidender', 'bedeutung', '.', 'er', 'ist', 'es', ',', 'der', 'alles', 'antreibt', '.'],
+y: ['and', 'where', 'water', 'is', 'liquid', ',', 'it', 'becomes', 'a', 'womb', 'for', 'cells', 'green', 'with', 'chlorophyll', '--', 'and', 'that', 'molecular', 'marvel', 'is', 'what', '&', 'apos', ';', 's', 'made', 'a', 'difference', '--', 'it', 'powers', 'everything', '.'],
+label: ['and', 'where', 'water', 'is', 'liquid', ',', 'it', 'becomes', 'a', '<UNK>', 'for', 'cells', 'green', 'with', '<UNK>', '--', 'and', 'that', 'molecular', '<UNK>', 'is', 'what', '&', '<EOS>'],
+pred: ['distance', 'think', 'distance', 'distance', 'perhaps', 'dinner', 'dinner', 'analogy', 'analogy', 'contain', 'greater', 'contain', 'dinner', 'dinner', 'greater', 'greater', 'fires', 'trouble', 'evolutionary', 'greater', 'leads', 'greater', 'perhaps', 'perhaps']
+03/05/2019 15:27:21 - INFO - main.main -   
+x: ['wenn', 'ich', 'menschen', 'davon', 'erzähle', ',', 'dass', 'unser', 'körper', 'unser', 'bewusstsein', 'verändert', 'und', 'bewusstsein', 'unser', 'verhalten', 'und', 'dass', 'unser', 'verhalten', 'unsere', 'resultate', 'verändert', ',', 'dann', 'sagen', 'sie', ':', '&', 'quot', ';', 'ich', 'sehe', 'das', 'nicht', ',', 'es', 'fühlt', 'sich', 'künstlich', 'an', '.', '&', 'quot', ';'],
+y: ['so', 'when', 'i', 'tell', 'people', 'about', 'this', ',', 'that', 'our', 'bodies', 'change', 'our', 'minds', 'and', 'our', 'minds', 'can', 'change', 'our', 'behavior', ',', 'and', 'our', 'behavior', 'can', 'change', 'our', 'outcomes', ',', 'they', 'say', 'to', 'me', ',', '&', 'quot', ';', 'i', 'don', '&', 'apos', ';', 't', '--', 'it', 'feels', 'fake', '.', '&', 'quot', ';', 'right', '?'],
+label: ['so', 'when', 'i', 'tell', 'people', 'about', 'this', ',', 'that', 'our', 'bodies', 'change', 'our', 'minds', 'and', 'our', 'minds', 'can', 'change', 'our', 'behavior', ',', 'and', '<EOS>'],
+pred: ['distance', 'distance', 'string', 'analogy', 'distance', 'think', 'think', 'sacred', 'sacred', 'evolutionary', 'perhaps', 'perhaps', 'distance', 'perhaps', 'perhaps', 'analogy', 'think', 'dinner', 'fixed', 'distance', 'perhaps', 'fixed', 'string', 'analogy']
+03/05/2019 15:27:21 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/05/2019 15:27:21 - INFO - main.main -   	 on Test Set 
+03/05/2019 15:27:21 - INFO - main.main -   		 loss: 8.30
+03/05/2019 15:27:21 - INFO - main.main -   		 BLEU_1: 0.0000, BLEU_2: 0.0000, BLEU_4: 0.0000
+03/05/2019 15:27:21 - INFO - main.main -   Evaluation Done, update early stoping 
+03/05/2019 15:27:21 - INFO - main.main -   Update patience to 10
+03/05/2019 15:27:21 - INFO - main.main -   Model Saved.
+03/05/2019 15:27:21 - INFO - main.main -   !!Early stop due to run out of patience!!
+03/05/2019 15:27:21 - INFO - main.main -   Best validation loss 8.2875
+03/05/2019 15:27:22 - INFO - __main__ -   end.
